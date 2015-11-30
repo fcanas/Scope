@@ -17,6 +17,11 @@
 		E703BB101C0BD6DB0098A5D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E703BB0F1C0BD6DB0098A5D9 /* Assets.xcassets */; };
 		E703BB131C0BD6DB0098A5D9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703BB111C0BD6DB0098A5D9 /* MainMenu.xib */; };
 		E703BB191C0BD75F0098A5D9 /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB181C0BD75F0098A5D9 /* WaveView.swift */; };
+		E703BB221C0BEF210098A5D9 /* ScopeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E703BB211C0BEF210098A5D9 /* ScopeUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E703BB291C0BEF210098A5D9 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
+		E703BB2E1C0BEF210098A5D9 /* ScopeUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB2D1C0BEF210098A5D9 /* ScopeUtilitiesTests.swift */; };
+		E703BB361C0BEF290098A5D9 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
+		E703BB381C0BEF3E0098A5D9 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB371C0BEF3E0098A5D9 /* Drawing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = E703BAD81C0BD4D20098A5D9;
 			remoteInfo = Scope;
+		};
+		E703BB2A1C0BEF210098A5D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E703BAD11C0BD4D20098A5D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E703BB1E1C0BEF210098A5D9;
+			remoteInfo = ScopeUtilities;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,6 +67,13 @@
 		E703BB121C0BD6DB0098A5D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E703BB141C0BD6DB0098A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E703BB181C0BD75F0098A5D9 /* WaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
+		E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScopeUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E703BB211C0BEF210098A5D9 /* ScopeUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScopeUtilities.h; sourceTree = "<group>"; };
+		E703BB231C0BEF210098A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E703BB281C0BEF210098A5D9 /* ScopeUtilitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScopeUtilitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E703BB2D1C0BEF210098A5D9 /* ScopeUtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeUtilitiesTests.swift; sourceTree = "<group>"; };
+		E703BB2F1C0BEF210098A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E703BB371C0BEF3E0098A5D9 /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +102,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E703BB361C0BEF290098A5D9 /* ScopeUtilities.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E703BB1B1C0BEF210098A5D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E703BB251C0BEF210098A5D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E703BB291C0BEF210098A5D9 /* ScopeUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +131,8 @@
 				E703BAED1C0BD4D20098A5D9 /* ScopeTests */,
 				E703BAF81C0BD4D20098A5D9 /* ScopeUITests */,
 				E703BB0C1C0BD6DB0098A5D9 /* Waves */,
+				E703BB201C0BEF210098A5D9 /* ScopeUtilities */,
+				E703BB2C1C0BEF210098A5D9 /* ScopeUtilitiesTests */,
 				E703BADA1C0BD4D20098A5D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,6 +144,8 @@
 				E703BAEA1C0BD4D20098A5D9 /* ScopeTests.xctest */,
 				E703BAF51C0BD4D20098A5D9 /* ScopeUITests.xctest */,
 				E703BB0B1C0BD6DB0098A5D9 /* Waves.app */,
+				E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */,
+				E703BB281C0BEF210098A5D9 /* ScopeUtilitiesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,7 +192,37 @@
 			path = Waves;
 			sourceTree = "<group>";
 		};
+		E703BB201C0BEF210098A5D9 /* ScopeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				E703BB211C0BEF210098A5D9 /* ScopeUtilities.h */,
+				E703BB231C0BEF210098A5D9 /* Info.plist */,
+				E703BB371C0BEF3E0098A5D9 /* Drawing.swift */,
+			);
+			path = ScopeUtilities;
+			sourceTree = "<group>";
+		};
+		E703BB2C1C0BEF210098A5D9 /* ScopeUtilitiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				E703BB2D1C0BEF210098A5D9 /* ScopeUtilitiesTests.swift */,
+				E703BB2F1C0BEF210098A5D9 /* Info.plist */,
+			);
+			path = ScopeUtilitiesTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E703BB1C1C0BEF210098A5D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E703BB221C0BEF210098A5D9 /* ScopeUtilities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		E703BAD81C0BD4D20098A5D9 /* Scope */ = {
@@ -226,6 +295,42 @@
 			productReference = E703BB0B1C0BD6DB0098A5D9 /* Waves.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E703BB301C0BEF210098A5D9 /* Build configuration list for PBXNativeTarget "ScopeUtilities" */;
+			buildPhases = (
+				E703BB1A1C0BEF210098A5D9 /* Sources */,
+				E703BB1B1C0BEF210098A5D9 /* Frameworks */,
+				E703BB1C1C0BEF210098A5D9 /* Headers */,
+				E703BB1D1C0BEF210098A5D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScopeUtilities;
+			productName = ScopeUtilities;
+			productReference = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E703BB271C0BEF210098A5D9 /* ScopeUtilitiesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E703BB331C0BEF210098A5D9 /* Build configuration list for PBXNativeTarget "ScopeUtilitiesTests" */;
+			buildPhases = (
+				E703BB241C0BEF210098A5D9 /* Sources */,
+				E703BB251C0BEF210098A5D9 /* Frameworks */,
+				E703BB261C0BEF210098A5D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E703BB2B1C0BEF210098A5D9 /* PBXTargetDependency */,
+			);
+			name = ScopeUtilitiesTests;
+			productName = ScopeUtilitiesTests;
+			productReference = E703BB281C0BEF210098A5D9 /* ScopeUtilitiesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -250,6 +355,12 @@
 					E703BB0A1C0BD6DB0098A5D9 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
+					E703BB1E1C0BEF210098A5D9 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					E703BB271C0BEF210098A5D9 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
 				};
 			};
 			buildConfigurationList = E703BAD41C0BD4D20098A5D9 /* Build configuration list for PBXProject "Scope" */;
@@ -269,6 +380,8 @@
 				E703BAE91C0BD4D20098A5D9 /* ScopeTests */,
 				E703BAF41C0BD4D20098A5D9 /* ScopeUITests */,
 				E703BB0A1C0BD6DB0098A5D9 /* Waves */,
+				E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */,
+				E703BB271C0BEF210098A5D9 /* ScopeUtilitiesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -303,6 +416,20 @@
 			files = (
 				E703BB101C0BD6DB0098A5D9 /* Assets.xcassets in Resources */,
 				E703BB131C0BD6DB0098A5D9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E703BB1D1C0BEF210098A5D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E703BB261C0BEF210098A5D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +470,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E703BB1A1C0BEF210098A5D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E703BB381C0BEF3E0098A5D9 /* Drawing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E703BB241C0BEF210098A5D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E703BB2E1C0BEF210098A5D9 /* ScopeUtilitiesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -355,6 +498,11 @@
 			isa = PBXTargetDependency;
 			target = E703BAD81C0BD4D20098A5D9 /* Scope */;
 			targetProxy = E703BAF61C0BD4D20098A5D9 /* PBXContainerItemProxy */;
+		};
+		E703BB2B1C0BEF210098A5D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */;
+			targetProxy = E703BB2A1C0BEF210098A5D9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -558,6 +706,73 @@
 			};
 			name = Release;
 		};
+		E703BB311C0BEF210098A5D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ScopeUtilities/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.ScopeUtilities;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E703BB321C0BEF210098A5D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ScopeUtilities/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.ScopeUtilities;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E703BB341C0BEF210098A5D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScopeUtilitiesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.ScopeUtilitiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E703BB351C0BEF210098A5D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ScopeUtilitiesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.ScopeUtilitiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -599,6 +814,22 @@
 			buildConfigurations = (
 				E703BB161C0BD6DB0098A5D9 /* Debug */,
 				E703BB171C0BD6DB0098A5D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E703BB301C0BEF210098A5D9 /* Build configuration list for PBXNativeTarget "ScopeUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E703BB311C0BEF210098A5D9 /* Debug */,
+				E703BB321C0BEF210098A5D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E703BB331C0BEF210098A5D9 /* Build configuration list for PBXNativeTarget "ScopeUtilitiesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E703BB341C0BEF210098A5D9 /* Debug */,
+				E703BB351C0BEF210098A5D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

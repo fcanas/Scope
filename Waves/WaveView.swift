@@ -7,17 +7,7 @@
 //
 
 import Cocoa
-
-func centeredCircle(cgFunction: (CGContext?, CGRect) -> Void) -> (context: CGContext, center: CGPoint, radius: CGFloat) -> Void {
-    return { (context: CGContext, center: CGPoint, radius: CGFloat) in
-        let origin = CGPoint(x: center.x - radius, y: center.y - radius)
-        let size = CGSize(width: radius * 2, height: radius * 2)
-        cgFunction(context, CGRect(origin: origin, size: size))
-    }
-}
-
-let strokeCircle = centeredCircle(CGContextStrokeEllipseInRect)
-let fillCircle = centeredCircle(CGContextFillEllipseInRect)
+import ScopeUtilities
 
 class WaveView: NSView {
     
