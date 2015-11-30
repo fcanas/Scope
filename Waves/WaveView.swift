@@ -56,4 +56,36 @@ class WaveView: NSView {
         let satCenter = CGPoint(x: sx, y: sy)
         fillCircle(context: context, center: satCenter, radius: satRadius)
     }
+    
+    
+    @IBAction func captureGif(sender: AnyObject) {
+        if let window = self.window {
+            let panel = NSSavePanel()
+            panel.nameFieldStringValue = "Waves.gif"
+            panel.beginSheetModalForWindow(window, completionHandler: { (result) -> Void in
+                if result == NSFileHandlingPanelOKButton {
+                    /// save completed
+                    
+                    let frameCount = 40
+                    
+                    let fileProperties :[String : [String : Int]] = [kCGImagePropertyGIFDictionary as String : [kCGImagePropertyGIFLoopCount as String : frameCount]]
+                    let frameProperties :[String : [String : Float]] = [kCGImagePropertyGIFDictionary as String : [kCGImagePropertyGIFDelayTime as String : Float(0.02)]]
+                    
+                    let destination = CGImageDestinationCreateWithURL(panel.URL!, kUTTypeGIF, frameCount, nil)
+                    CGImageDestinationSetProperties(destination!, fileProperties)
+                    
+                    var image :CGImage!
+                    
+                    for var frame = 0; frame < frameCount; frame++ {
+                        CGImageDestinationAddImage(destination!, image, frameProperties)
+                    }
+                    
+                    CGImageDestinationFinalize(destination!)
+                    
+                    Swift.print("save completed \(result)")
+                }
+            })
+        }
+        
+    }
 }
