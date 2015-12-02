@@ -22,6 +22,7 @@
 		E703BB2E1C0BEF210098A5D9 /* ScopeUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB2D1C0BEF210098A5D9 /* ScopeUtilitiesTests.swift */; };
 		E703BB361C0BEF290098A5D9 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
 		E703BB381C0BEF3E0098A5D9 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB371C0BEF3E0098A5D9 /* Drawing.swift */; };
+		E703BB441C0E93AB0098A5D9 /* ScopeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB431C0E93AB0098A5D9 /* ScopeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		E703BB2D1C0BEF210098A5D9 /* ScopeUtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeUtilitiesTests.swift; sourceTree = "<group>"; };
 		E703BB2F1C0BEF210098A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E703BB371C0BEF3E0098A5D9 /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
+		E703BB431C0E93AB0098A5D9 /* ScopeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 				E703BB211C0BEF210098A5D9 /* ScopeUtilities.h */,
 				E703BB231C0BEF210098A5D9 /* Info.plist */,
 				E703BB371C0BEF3E0098A5D9 /* Drawing.swift */,
+				E703BB431C0E93AB0098A5D9 /* ScopeView.swift */,
 			);
 			path = ScopeUtilities;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E703BB381C0BEF3E0098A5D9 /* Drawing.swift in Sources */,
+				E703BB441C0E93AB0098A5D9 /* ScopeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,6 +796,7 @@
 				E703BB001C0BD4D20098A5D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E703BB011C0BD4D20098A5D9 /* Build configuration list for PBXNativeTarget "ScopeTests" */ = {
 			isa = XCConfigurationList;
@@ -800,6 +805,7 @@
 				E703BB031C0BD4D20098A5D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E703BB041C0BD4D20098A5D9 /* Build configuration list for PBXNativeTarget "ScopeUITests" */ = {
 			isa = XCConfigurationList;
@@ -808,6 +814,7 @@
 				E703BB061C0BD4D20098A5D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E703BB151C0BD6DB0098A5D9 /* Build configuration list for PBXNativeTarget "Waves" */ = {
 			isa = XCConfigurationList;
@@ -816,6 +823,7 @@
 				E703BB171C0BD6DB0098A5D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E703BB301C0BEF210098A5D9 /* Build configuration list for PBXNativeTarget "ScopeUtilities" */ = {
 			isa = XCConfigurationList;
@@ -824,6 +832,7 @@
 				E703BB321C0BEF210098A5D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E703BB331C0BEF210098A5D9 /* Build configuration list for PBXNativeTarget "ScopeUtilitiesTests" */ = {
 			isa = XCConfigurationList;
@@ -832,6 +841,7 @@
 				E703BB351C0BEF210098A5D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
