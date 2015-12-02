@@ -22,9 +22,13 @@ class WaveView: NSView {
         NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSDefaultRunLoopMode)
     }
     
+    let frameCount :Int = Int(CGFloat(M_PI * 2) / 0.1)
+    let stepSize = CGFloat(0.1)
+    let modBase = CGFloat(M_PI * 2)
+    
     func increment() {
-        p += 0.1
-        p %= CGFloat(M_PI * 2)
+        p += stepSize
+        p %= modBase
     }
     
     func tick(timer: NSTimer) {
@@ -36,12 +40,30 @@ class WaveView: NSView {
 
         let ctx = NSGraphicsContext.currentContext()!.CGContext
         
+        renderInContext(ctx)
+    }
+    
+    func renderInContext(context: CGContext) {
         for var x = 30; x < 400; x += 35 {
             for var y = 30; y < 400; y += 35 {
-                drawOrbit(ctx, center: CGPoint(x: x, y: y), radius: 13, satRadius: 5, satPhase: p + CGFloat(x) / 100.0 + CGFloat(y) / 100.0)
+                drawOrbit(context, center: CGPoint(x: x, y: y), radius: 13, satRadius: 5, satPhase: p + CGFloat(x) / 100.0 + CGFloat(y) / 100.0)
             }
         }
-        increment()
+    }
+    
+    func animationFrameSize() -> CGSize {
+        return CGSize(width: 410, height: 410)
+    }
+    
+    func captureFrame() -> CGImage {
+        let frameSize = animationFrameSize()
+        let offscreenRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(frameSize.width), pixelsHigh: Int(frameSize.height), bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: NSDeviceRGBColorSpace, bitmapFormat: NSBitmapFormat.NSAlphaFirstBitmapFormat, bytesPerRow: 0, bitsPerPixel: 0)
+        
+        let ctx = NSGraphicsContext(bitmapImageRep: offscreenRep!)?.CGContext
+        
+        renderInContext(ctx!)
+        
+        return CGBitmapContextCreateImage(ctx!)!
     }
     
     func drawOrbit(context: CGContext, center :CGPoint, radius: CGFloat, satRadius: CGFloat, satPhase: CGFloat) {
@@ -57,16 +79,13 @@ class WaveView: NSView {
         fillCircle(context: context, center: satCenter, radius: satRadius)
     }
     
-    
     @IBAction func captureGif(sender: AnyObject) {
         if let window = self.window {
             let panel = NSSavePanel()
             panel.nameFieldStringValue = "Waves.gif"
             panel.beginSheetModalForWindow(window, completionHandler: { (result) -> Void in
                 if result == NSFileHandlingPanelOKButton {
-                    /// save completed
-                    
-                    let frameCount = 40
+                    let frameCount = self.frameCount
                     
                     let fileProperties :[String : [String : Int]] = [kCGImagePropertyGIFDictionary as String : [kCGImagePropertyGIFLoopCount as String : frameCount]]
                     let frameProperties :[String : [String : Float]] = [kCGImagePropertyGIFDictionary as String : [kCGImagePropertyGIFDelayTime as String : Float(0.02)]]
@@ -74,18 +93,14 @@ class WaveView: NSView {
                     let destination = CGImageDestinationCreateWithURL(panel.URL!, kUTTypeGIF, frameCount, nil)
                     CGImageDestinationSetProperties(destination!, fileProperties)
                     
-                    var image :CGImage!
-                    
                     for var frame = 0; frame < frameCount; frame++ {
-                        CGImageDestinationAddImage(destination!, image, frameProperties)
+                        CGImageDestinationAddImage(destination!, self.captureFrame(), frameProperties)
+                        self.increment()
                     }
                     
                     CGImageDestinationFinalize(destination!)
-                    
-                    Swift.print("save completed \(result)")
                 }
             })
         }
-        
     }
 }
