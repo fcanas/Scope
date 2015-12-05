@@ -676,7 +676,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="8ui-Bn-pps" customClass="WaveView" customModule="Waves" customModuleProvider="target">
+                    <customView horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="8ui-Bn-pps" customClass="WaveView" customModule="Waves" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                         <animations/>
                     </customView>

@@ -14,8 +14,6 @@ class WaveView: NSView, GifCaptureTarget {
     let orbitColor = NSColor.lightGrayColor()
     let satelliteColor = NSColor.blackColor()
     
-    
-    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         let timer =  NSTimer(timeInterval: 1.0/30.0, target: self, selector: Selector("tick:"), userInfo: nil, repeats: true)
@@ -71,4 +69,5 @@ class WaveView: NSView, GifCaptureTarget {
         captureGifFromWindow(self.window!, captureTarget: self)
     }
     
+    override var intrinsicContentSize: NSSize { get { return animationSize } }
 }
