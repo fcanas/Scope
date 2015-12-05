@@ -23,7 +23,7 @@ class WaveView: NSView, GifCaptureTarget {
     let name = "Waves"
     var frameCount :Int = Int(CGFloat(M_PI * 2) / 0.1)
     var frameDuration :Float = 0.02
-    let animationSize :CGSize = CGSize(width: 410, height: 410)
+    let animationSize :CGSize = CGSize(width: 520, height: 520)
     
     func increment() {
         p += stepSize
@@ -45,9 +45,9 @@ class WaveView: NSView, GifCaptureTarget {
     }
     
     func renderInContext(context: CGContext) {
-        for var x = 30; x < 400; x += 35 {
-            for var y = 30; y < 400; y += 35 {
-                drawOrbit(context, center: CGPoint(x: x, y: y), radius: 13, satRadius: 5, satPhase: p + CGFloat(x) / 100.0 + CGFloat(y) / 100.0)
+        for var x = 35; x < 500; x += 30 {
+            for var y = 35; y < 500; y += 30 {
+                drawOrbit(context, center: CGPoint(x: x, y: y), radius: 30, satRadius: 5, satPhase: p + CGFloat(x) / 85.0 + CGFloat(y) / 85.0)
             }
         }
     }
