@@ -59,7 +59,15 @@ public func captureGifFromWindow(window: NSWindow, captureTarget: GifCaptureTarg
 public class ScopeView : NSView, GifCaptureTarget {
     public var name :String = "Scope"
     public var frameCount :Int = 0
-    public var frameDuration :Float = 1
+    public var frameDuration :Float = 1 {
+        didSet {
+            if let timer = self.timer {
+                timer.invalidate()
+            }
+            self.timer =  NSTimer(timeInterval: NSTimeInterval(frameDuration), target: self, selector: Selector("tick:"), userInfo: nil, repeats: true)
+            NSRunLoop.mainRunLoop().addTimer(self.timer!, forMode: NSDefaultRunLoopMode)
+        }
+    }
     public var animationSize :CGSize = CGSize(width: 512, height: 512)
     
     public func renderInContext(context: CGContext) {}
@@ -68,6 +76,11 @@ public class ScopeView : NSView, GifCaptureTarget {
     public func clear(context: CGContext, color: NSColor) {
         CGContextSetFillColorWithColor(context, color.CGColor)
         CGContextFillRect(context, CGRect(origin: CGPoint.zero, size: animationSize))
+    }
+    
+    func tick(timer: NSTimer) {
+        increment()
+        setNeedsDisplayInRect(bounds)
     }
     
     override public var intrinsicContentSize: NSSize { get { return animationSize } }
@@ -80,5 +93,7 @@ public class ScopeView : NSView, GifCaptureTarget {
     @IBAction func captureGif(sender: AnyObject) {
         captureGifFromWindow(self.window!, captureTarget: self)
     }
+    
+    var timer :NSTimer? = nil
 }
 

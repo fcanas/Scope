@@ -18,17 +18,9 @@ class Star: ScopeView {
         name = "Star"
         frameCount = Int(Float(M_PI) * 2 / 0.03)
         frameDuration = 0.03
-        
-        let timer =  NSTimer(timeInterval: NSTimeInterval(frameDuration), target: self, selector: Selector("tick:"), userInfo: nil, repeats: true)
-        NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSDefaultRunLoopMode)
     }
     
     var timeIndex :Float = 0
-    
-    func tick(timer: NSTimer) {
-        increment()
-        setNeedsDisplayInRect(bounds)
-    }
     
     override func renderInContext(context: CGContext) {
         clear(context, color: NSColor.blackColor())
