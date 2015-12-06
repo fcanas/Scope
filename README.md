@@ -2,6 +2,32 @@
 
 A place to doodle with Swift
 
+## Star
+![](https://github.com/fcanas/Scope/blob/master/Star/Star.gif?raw=true).
+
+```swift
+func star(inner: CGFloat, outer: CGFloat, pointCount :Int) -> CGPath {
+    let path = CGPathCreateMutable()
+    var identity = CGAffineTransformIdentity
+    var angle :CGFloat = 0
+    CGPathMoveToPoint(path, &identity, cos(angle) * inner, sin(angle) * inner)
+    while angle < CGFloat(M_PI) * 2 {
+        angle += CGFloat(M_PI * 2) / CGFloat(pointCount * 2)
+        CGPathAddLineToPoint(path, &identity, cos(angle) * outer, sin(angle) * outer)
+        angle += CGFloat(M_PI * 2) / CGFloat(pointCount * 2)
+        CGPathAddLineToPoint(path, &identity, cos(angle) * inner, sin(angle) * inner)
+    }
+    return path
+}
+
+CGContextSetFillColorWithColor(context, NSColor.whiteColor().CGColor)
+CGContextTranslateCTM(context, animationSize.width / 2, animationSize.height / 2)
+CGContextScaleCTM(context, CGFloat(cos(timeIndex) * 10.0), CGFloat(cos(timeIndex) * 10.0))
+CGContextRotateCTM(context, CGFloat(timeIndex * 2))
+CGContextAddPath(context, star(10, outer: 20, pointCount: 10))
+CGContextFillPath(context)
+```
+
 ## Waves
 Shamelessly copying [Bees & Bombs](http://beesandbombs.tumblr.com/post/134366721074/ok-couldnt-resist-remaking-this-old-chestnut-in)
 

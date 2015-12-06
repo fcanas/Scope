@@ -23,6 +23,11 @@
 		E703BB361C0BEF290098A5D9 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
 		E703BB381C0BEF3E0098A5D9 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB371C0BEF3E0098A5D9 /* Drawing.swift */; };
 		E703BB441C0E93AB0098A5D9 /* ScopeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB431C0E93AB0098A5D9 /* ScopeView.swift */; };
+		E703BB5A1C1277370098A5D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB591C1277370098A5D9 /* AppDelegate.swift */; };
+		E703BB5C1C1277370098A5D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E703BB5B1C1277370098A5D9 /* Assets.xcassets */; };
+		E703BB5F1C1277370098A5D9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703BB5D1C1277370098A5D9 /* MainMenu.xib */; };
+		E703BB651C1277650098A5D9 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB641C1277650098A5D9 /* Star.swift */; };
+		E703BB661C1277720098A5D9 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +46,13 @@
 			remoteInfo = Scope;
 		};
 		E703BB2A1C0BEF210098A5D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E703BAD11C0BD4D20098A5D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E703BB1E1C0BEF210098A5D9;
+			remoteInfo = ScopeUtilities;
+		};
+		E703BB671C12777A0098A5D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E703BAD11C0BD4D20098A5D9 /* Project object */;
 			proxyType = 1;
@@ -76,6 +88,13 @@
 		E703BB2F1C0BEF210098A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E703BB371C0BEF3E0098A5D9 /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 		E703BB431C0E93AB0098A5D9 /* ScopeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeView.swift; sourceTree = "<group>"; };
+		E703BB521C1276820098A5D9 /* Waves copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Waves copy-Info.plist"; path = "/Users/fcanas/repositories/Scope/Waves copy-Info.plist"; sourceTree = "<absolute>"; };
+		E703BB571C1277370098A5D9 /* Star.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Star.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E703BB591C1277370098A5D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E703BB5B1C1277370098A5D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E703BB5E1C1277370098A5D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E703BB601C1277370098A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E703BB641C1277650098A5D9 /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +142,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E703BB541C1277370098A5D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E703BB661C1277720098A5D9 /* ScopeUtilities.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -135,7 +162,9 @@
 				E703BB0C1C0BD6DB0098A5D9 /* Waves */,
 				E703BB201C0BEF210098A5D9 /* ScopeUtilities */,
 				E703BB2C1C0BEF210098A5D9 /* ScopeUtilitiesTests */,
+				E703BB581C1277370098A5D9 /* Star */,
 				E703BADA1C0BD4D20098A5D9 /* Products */,
+				E703BB521C1276820098A5D9 /* Waves copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +177,7 @@
 				E703BB0B1C0BD6DB0098A5D9 /* Waves.app */,
 				E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */,
 				E703BB281C0BEF210098A5D9 /* ScopeUtilitiesTests.xctest */,
+				E703BB571C1277370098A5D9 /* Star.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,6 +242,18 @@
 				E703BB2F1C0BEF210098A5D9 /* Info.plist */,
 			);
 			path = ScopeUtilitiesTests;
+			sourceTree = "<group>";
+		};
+		E703BB581C1277370098A5D9 /* Star */ = {
+			isa = PBXGroup;
+			children = (
+				E703BB591C1277370098A5D9 /* AppDelegate.swift */,
+				E703BB5B1C1277370098A5D9 /* Assets.xcassets */,
+				E703BB5D1C1277370098A5D9 /* MainMenu.xib */,
+				E703BB601C1277370098A5D9 /* Info.plist */,
+				E703BB641C1277650098A5D9 /* Star.swift */,
+			);
+			path = Star;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +376,24 @@
 			productReference = E703BB281C0BEF210098A5D9 /* ScopeUtilitiesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E703BB561C1277370098A5D9 /* Star */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E703BB611C1277370098A5D9 /* Build configuration list for PBXNativeTarget "Star" */;
+			buildPhases = (
+				E703BB531C1277370098A5D9 /* Sources */,
+				E703BB541C1277370098A5D9 /* Frameworks */,
+				E703BB551C1277370098A5D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E703BB681C12777A0098A5D9 /* PBXTargetDependency */,
+			);
+			name = Star;
+			productName = Star;
+			productReference = E703BB571C1277370098A5D9 /* Star.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -364,6 +424,9 @@
 					E703BB271C0BEF210098A5D9 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
+					E703BB561C1277370098A5D9 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
 				};
 			};
 			buildConfigurationList = E703BAD41C0BD4D20098A5D9 /* Build configuration list for PBXProject "Scope" */;
@@ -385,6 +448,7 @@
 				E703BB0A1C0BD6DB0098A5D9 /* Waves */,
 				E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */,
 				E703BB271C0BEF210098A5D9 /* ScopeUtilitiesTests */,
+				E703BB561C1277370098A5D9 /* Star */,
 			);
 		};
 /* End PBXProject section */
@@ -433,6 +497,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E703BB551C1277370098A5D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E703BB5C1C1277370098A5D9 /* Assets.xcassets in Resources */,
+				E703BB5F1C1277370098A5D9 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +563,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E703BB531C1277370098A5D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E703BB5A1C1277370098A5D9 /* AppDelegate.swift in Sources */,
+				E703BB651C1277650098A5D9 /* Star.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -508,6 +590,11 @@
 			target = E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */;
 			targetProxy = E703BB2A1C0BEF210098A5D9 /* PBXContainerItemProxy */;
 		};
+		E703BB681C12777A0098A5D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */;
+			targetProxy = E703BB671C12777A0098A5D9 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -523,6 +610,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				E703BB121C0BD6DB0098A5D9 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		E703BB5D1C1277370098A5D9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E703BB5E1C1277370098A5D9 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -777,6 +872,30 @@
 			};
 			name = Release;
 		};
+		E703BB621C1277370098A5D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Star/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.Star;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E703BB631C1277370098A5D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Star/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.Star;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -842,6 +961,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E703BB611C1277370098A5D9 /* Build configuration list for PBXNativeTarget "Star" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E703BB621C1277370098A5D9 /* Debug */,
+				E703BB631C1277370098A5D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
