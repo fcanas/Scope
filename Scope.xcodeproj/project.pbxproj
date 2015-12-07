@@ -28,6 +28,11 @@
 		E703BB5F1C1277370098A5D9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703BB5D1C1277370098A5D9 /* MainMenu.xib */; };
 		E703BB651C1277650098A5D9 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB641C1277650098A5D9 /* Star.swift */; };
 		E703BB661C1277720098A5D9 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
+		E703BB851C13D8A50098A5D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB841C13D8A50098A5D9 /* AppDelegate.swift */; };
+		E703BB871C13D8A50098A5D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E703BB861C13D8A50098A5D9 /* Assets.xcassets */; };
+		E703BB8A1C13D8A50098A5D9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703BB881C13D8A50098A5D9 /* MainMenu.xib */; };
+		E703BB911C13D8B70098A5D9 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
+		E703BB931C13D8D00098A5D9 /* TorusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB921C13D8D00098A5D9 /* TorusView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,13 @@
 			remoteInfo = ScopeUtilities;
 		};
 		E703BB671C12777A0098A5D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E703BAD11C0BD4D20098A5D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E703BB1E1C0BEF210098A5D9;
+			remoteInfo = ScopeUtilities;
+		};
+		E703BB8F1C13D8AE0098A5D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E703BAD11C0BD4D20098A5D9 /* Project object */;
 			proxyType = 1;
@@ -95,6 +107,12 @@
 		E703BB5E1C1277370098A5D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E703BB601C1277370098A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E703BB641C1277650098A5D9 /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		E703BB821C13D8A50098A5D9 /* Torus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Torus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E703BB841C13D8A50098A5D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E703BB861C13D8A50098A5D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E703BB891C13D8A50098A5D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E703BB8B1C13D8A50098A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E703BB921C13D8D00098A5D9 /* TorusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +168,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E703BB7F1C13D8A50098A5D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E703BB911C13D8B70098A5D9 /* ScopeUtilities.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -163,6 +189,7 @@
 				E703BB201C0BEF210098A5D9 /* ScopeUtilities */,
 				E703BB2C1C0BEF210098A5D9 /* ScopeUtilitiesTests */,
 				E703BB581C1277370098A5D9 /* Star */,
+				E703BB831C13D8A50098A5D9 /* Torus */,
 				E703BADA1C0BD4D20098A5D9 /* Products */,
 				E703BB521C1276820098A5D9 /* Waves copy-Info.plist */,
 			);
@@ -178,6 +205,7 @@
 				E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */,
 				E703BB281C0BEF210098A5D9 /* ScopeUtilitiesTests.xctest */,
 				E703BB571C1277370098A5D9 /* Star.app */,
+				E703BB821C13D8A50098A5D9 /* Torus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,6 +282,18 @@
 				E703BB641C1277650098A5D9 /* Star.swift */,
 			);
 			path = Star;
+			sourceTree = "<group>";
+		};
+		E703BB831C13D8A50098A5D9 /* Torus */ = {
+			isa = PBXGroup;
+			children = (
+				E703BB841C13D8A50098A5D9 /* AppDelegate.swift */,
+				E703BB861C13D8A50098A5D9 /* Assets.xcassets */,
+				E703BB881C13D8A50098A5D9 /* MainMenu.xib */,
+				E703BB8B1C13D8A50098A5D9 /* Info.plist */,
+				E703BB921C13D8D00098A5D9 /* TorusView.swift */,
+			);
+			path = Torus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +434,24 @@
 			productReference = E703BB571C1277370098A5D9 /* Star.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E703BB811C13D8A50098A5D9 /* Torus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E703BB8E1C13D8A50098A5D9 /* Build configuration list for PBXNativeTarget "Torus" */;
+			buildPhases = (
+				E703BB7E1C13D8A50098A5D9 /* Sources */,
+				E703BB7F1C13D8A50098A5D9 /* Frameworks */,
+				E703BB801C13D8A50098A5D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E703BB901C13D8AE0098A5D9 /* PBXTargetDependency */,
+			);
+			name = Torus;
+			productName = Torus;
+			productReference = E703BB821C13D8A50098A5D9 /* Torus.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -427,6 +485,9 @@
 					E703BB561C1277370098A5D9 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
+					E703BB811C13D8A50098A5D9 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
 				};
 			};
 			buildConfigurationList = E703BAD41C0BD4D20098A5D9 /* Build configuration list for PBXProject "Scope" */;
@@ -449,6 +510,7 @@
 				E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */,
 				E703BB271C0BEF210098A5D9 /* ScopeUtilitiesTests */,
 				E703BB561C1277370098A5D9 /* Star */,
+				E703BB811C13D8A50098A5D9 /* Torus */,
 			);
 		};
 /* End PBXProject section */
@@ -506,6 +568,15 @@
 			files = (
 				E703BB5C1C1277370098A5D9 /* Assets.xcassets in Resources */,
 				E703BB5F1C1277370098A5D9 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E703BB801C13D8A50098A5D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E703BB871C13D8A50098A5D9 /* Assets.xcassets in Resources */,
+				E703BB8A1C13D8A50098A5D9 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +643,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E703BB7E1C13D8A50098A5D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E703BB931C13D8D00098A5D9 /* TorusView.swift in Sources */,
+				E703BB851C13D8A50098A5D9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -594,6 +674,11 @@
 			isa = PBXTargetDependency;
 			target = E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */;
 			targetProxy = E703BB671C12777A0098A5D9 /* PBXContainerItemProxy */;
+		};
+		E703BB901C13D8AE0098A5D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */;
+			targetProxy = E703BB8F1C13D8AE0098A5D9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -618,6 +703,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				E703BB5E1C1277370098A5D9 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		E703BB881C13D8A50098A5D9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E703BB891C13D8A50098A5D9 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -896,6 +989,30 @@
 			};
 			name = Release;
 		};
+		E703BB8C1C13D8A50098A5D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Torus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.Torus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E703BB8D1C13D8A50098A5D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Torus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.Torus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -967,6 +1084,15 @@
 			buildConfigurations = (
 				E703BB621C1277370098A5D9 /* Debug */,
 				E703BB631C1277370098A5D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E703BB8E1C13D8A50098A5D9 /* Build configuration list for PBXNativeTarget "Torus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E703BB8C1C13D8A50098A5D9 /* Debug */,
+				E703BB8D1C13D8A50098A5D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

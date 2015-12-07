@@ -2,6 +2,11 @@
 
 A place to doodle with Swift
 
+## Torus
+![](https://github.com/fcanas/Scope/blob/master/Torus/Torus.gif?raw=true)
+
+[torus source](https://github.com/fcanas/Scope/blob/master/Torus/TorusView.swift)
+
 ## Star
 ![](https://github.com/fcanas/Scope/blob/master/Star/Star.gif?raw=true).
 
