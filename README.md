@@ -2,6 +2,12 @@
 
 A place to doodle with Swift
 
+## Seed
+
+![](https://github.com/fcanas/Scope/blob/master/Seed/Seed.gif?raw=true)
+
+[torus source](https://github.com/fcanas/Scope/blob/master/Seed/SeedView.swift)
+
 ## Torus
 ![](https://github.com/fcanas/Scope/blob/master/Torus/Torus.gif?raw=true)
 
