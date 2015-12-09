@@ -33,6 +33,7 @@
 		E703BB8A1C13D8A50098A5D9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703BB881C13D8A50098A5D9 /* MainMenu.xib */; };
 		E703BB911C13D8B70098A5D9 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
 		E703BB931C13D8D00098A5D9 /* TorusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB921C13D8D00098A5D9 /* TorusView.swift */; };
+		E75A53111C17B16E001CB419 /* Brush.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A53101C17B16E001CB419 /* Brush.swift */; };
 		E7B33C881C1511B5008BC311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33C871C1511B5008BC311 /* AppDelegate.swift */; };
 		E7B33C8A1C1511B5008BC311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B33C891C1511B5008BC311 /* Assets.xcassets */; };
 		E7B33C8D1C1511B5008BC311 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B33C8B1C1511B5008BC311 /* MainMenu.xib */; };
@@ -137,6 +138,7 @@
 		E703BB891C13D8A50098A5D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E703BB8B1C13D8A50098A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E703BB921C13D8D00098A5D9 /* TorusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorusView.swift; sourceTree = "<group>"; };
+		E75A53101C17B16E001CB419 /* Brush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brush.swift; sourceTree = "<group>"; };
 		E7B33C851C1511B5008BC311 /* Seed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B33C871C1511B5008BC311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7B33C891C1511B5008BC311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 				E703BB231C0BEF210098A5D9 /* Info.plist */,
 				E703BB371C0BEF3E0098A5D9 /* Drawing.swift */,
 				E703BB431C0E93AB0098A5D9 /* ScopeView.swift */,
+				E75A53101C17B16E001CB419 /* Brush.swift */,
 			);
 			path = ScopeUtilities;
 			sourceTree = "<group>";
@@ -763,6 +766,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E75A53111C17B16E001CB419 /* Brush.swift in Sources */,
 				E703BB381C0BEF3E0098A5D9 /* Drawing.swift in Sources */,
 				E703BB441C0E93AB0098A5D9 /* ScopeView.swift in Sources */,
 			);
@@ -1338,6 +1342,7 @@
 				E7B33C901C1511B5008BC311 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7B33CA51C152227008BC311 /* Build configuration list for PBXNativeTarget "Stroke" */ = {
 			isa = XCConfigurationList;
@@ -1346,6 +1351,7 @@
 				E7B33CA71C152227008BC311 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

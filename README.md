@@ -2,6 +2,12 @@
 
 A place to doodle with Swift
 
+## Stroke
+
+![](https://github.com/fcanas/Scope/blob/master/Stroke/Stroke.gif?raw=true)
+
+[source](https://github.com/fcanas/Scope/blob/master/Stroke/StrokeView.swift)
+
 ## Seed
 
 ![](https://github.com/fcanas/Scope/blob/master/Seed/Seed.gif?raw=true)
