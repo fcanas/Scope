@@ -33,6 +33,7 @@
 		E703BB8A1C13D8A50098A5D9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703BB881C13D8A50098A5D9 /* MainMenu.xib */; };
 		E703BB911C13D8B70098A5D9 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
 		E703BB931C13D8D00098A5D9 /* TorusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB921C13D8D00098A5D9 /* TorusView.swift */; };
+		E70AB5391C1E5056004E3D46 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
 		E75A53111C17B16E001CB419 /* Brush.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A53101C17B16E001CB419 /* Brush.swift */; };
 		E7B33C881C1511B5008BC311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33C871C1511B5008BC311 /* AppDelegate.swift */; };
 		E7B33C8A1C1511B5008BC311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B33C891C1511B5008BC311 /* Assets.xcassets */; };
@@ -76,6 +77,13 @@
 			remoteInfo = ScopeUtilities;
 		};
 		E703BB8F1C13D8AE0098A5D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E703BAD11C0BD4D20098A5D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E703BB1E1C0BEF210098A5D9;
+			remoteInfo = ScopeUtilities;
+		};
+		E70AB53A1C1E505D004E3D46 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E703BAD11C0BD4D20098A5D9 /* Project object */;
 			proxyType = 1;
@@ -158,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70AB5391C1E5056004E3D46 /* ScopeUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +413,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E70AB53B1C1E505D004E3D46 /* PBXTargetDependency */,
 			);
 			name = Scope;
 			productName = Scope;
@@ -843,6 +853,11 @@
 			isa = PBXTargetDependency;
 			target = E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */;
 			targetProxy = E703BB8F1C13D8AE0098A5D9 /* PBXContainerItemProxy */;
+		};
+		E70AB53B1C1E505D004E3D46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */;
+			targetProxy = E70AB53A1C1E505D004E3D46 /* PBXContainerItemProxy */;
 		};
 		E7B33C931C1511BD008BC311 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
