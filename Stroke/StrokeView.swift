@@ -9,24 +9,21 @@
 import Cocoa
 import ScopeUtilities
 
-class StrokeView: ScopeView {
+class StrokeView: NSObject, GifCaptureTarget {
 
+    let name = "Stroke"
+    lazy var frameCount :Int =  {
+        return Int(self.maxCounter / CGFloat(self.counterIncrement))
+    }()
+    let frameDuration :Float = 1/30.0
+    let animationSize = CGSize(width: 400, height: 400)
+    
     var stroke :Stroke = Stroke()
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        
-        animationSize = CGSize(width: 400, height: 400)
-        name = "Stroke"
-        frameCount = Int(maxCounter / CGFloat(counterIncrement))
-        frameDuration = 1/30.0
-    }
-    
     let maxCounter :CGFloat = 3 * CGFloat(M_PI)
-    var counterIncrement :CGFloat = 0.18
+    let counterIncrement :CGFloat = 0.18
     var counter :CGFloat = 0
-
-    override func renderInContext(context: CGContext) {
+    
+    func renderInContext(context: CGContext) {
         clear(context, color: NSColor.blackColor())
         
         CGContextTranslateCTM(context, animationSize.width / 2, animationSize.height / 2)
@@ -78,7 +75,7 @@ class StrokeView: ScopeView {
         dotBrush(context, stroke: stroke, color: NSColor.whiteColor().CGColor, maxRadius: margin)
     }
     
-    override func increment() {
+    func increment() {
         counter += counterIncrement
         if counter > maxCounter {
             counter = 0.0

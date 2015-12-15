@@ -9,21 +9,17 @@
 import Cocoa
 import ScopeUtilities
 
-class SeedView: ScopeView {
-
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        
-        animationSize = CGSize(width: 400, height: 400)
-        name = "Seed"
-        frameCount = Int(1.0 / Float(counterIncrement))
-        frameDuration = 1/60.0
-    }
+@objc class Seed: NSObject, GifCaptureTarget {
+    
+    let name = "Seed"
+    lazy var frameCount :Int = { return Int(1.0 / Float(self.counterIncrement)) }()
+    let frameDuration :Float = 1/60.0
+    let animationSize = CGSize(width: 400, height: 400)
     
     var counterIncrement :CGFloat = 0.01
     var counter :CGFloat = 0
     
-    override func renderInContext(context: CGContext) {
+    func renderInContext(context: CGContext) {
         clear(context, color: NSColor.blackColor())
         CGContextTranslateCTM(context, animationSize.width / 2, animationSize.height / 2)
         
@@ -32,7 +28,7 @@ class SeedView: ScopeView {
         }
     }
     
-    override func increment() {
+    func increment() {
         counter += counterIncrement
         if counter > 1.0 {
             counter = 0.0

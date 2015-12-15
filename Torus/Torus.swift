@@ -9,21 +9,17 @@
 import Cocoa
 import ScopeUtilities
 
-class TorusView: ScopeView {
+class Torus: NSObject, GifCaptureTarget {
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        
-        animationSize = CGSize(width: 450, height: 300)
-        name = "Torus"
-        frameCount = Int(Float(M_PI) * 2 / 0.03)
-        frameDuration = 0.03
-    }
+    let animationSize = CGSize(width: 450, height: 300)
+    let name = "Torus"
+    let frameCount = Int(Float(M_PI) * 2 / 0.03)
+    let frameDuration :Float = 0.03
     
     var angle :CGFloat = 0.0
     var center = CGPoint(x: 0, y: 0)
     
-    override func renderInContext(context: CGContext) {
+    func renderInContext(context: CGContext) {
         clear(context, color: NSColor.blackColor())
         
         CGContextTranslateCTM(context, animationSize.width / 2, animationSize.height / 2)
@@ -44,7 +40,7 @@ class TorusView: ScopeView {
         return CGRect(origin: CGPoint(x: center.x - size.width / 2, y: center.y - size.height / 2), size: size)
     }
     
-    override func increment() {
+    func increment() {
         angle += 0.03
         if angle >= CGFloat(M_PI * 2) {
             angle -= CGFloat(M_PI * 2)
