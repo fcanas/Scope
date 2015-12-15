@@ -9,7 +9,7 @@
 import Cocoa
 import ScopeUtilities
 
-class StrokeView: NSObject, GifCaptureTarget {
+class StrokeAnimation: NSObject, Animation {
 
     let name = "Stroke"
     lazy var frameCount :Int =  {

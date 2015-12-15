@@ -6,13 +6,13 @@ A place to doodle with Swift
 
 ![](https://github.com/fcanas/Scope/blob/master/Stroke/Stroke.gif?raw=true)
 
-[source](https://github.com/fcanas/Scope/blob/master/Stroke/StrokeView.swift)
+[source](https://github.com/fcanas/Scope/blob/master/Stroke/Stroke.swift)
 
 ## Seed
 
 ![](https://github.com/fcanas/Scope/blob/master/Seed/Seed.gif?raw=true)
 
-[source](https://github.com/fcanas/Scope/blob/master/Seed/SeedView.swift)
+[source](https://github.com/fcanas/Scope/blob/master/Seed/Seed.swift)
 
 ## Torus
 ![](https://github.com/fcanas/Scope/blob/master/Torus/Torus.gif?raw=true)

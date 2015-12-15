@@ -9,7 +9,7 @@
 import Cocoa
 import ScopeUtilities
 
-class Star: NSObject, GifCaptureTarget {
+class Star: NSObject, Animation {
     
     let animationSize = CGSize(width: 400, height: 400)
     let name = "Star"

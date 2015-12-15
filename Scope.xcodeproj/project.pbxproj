@@ -34,17 +34,18 @@
 		E703BB911C13D8B70098A5D9 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
 		E703BB931C13D8D00098A5D9 /* Torus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB921C13D8D00098A5D9 /* Torus.swift */; };
 		E70AB5391C1E5056004E3D46 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
+		E70AB53E1C1F9E76004E3D46 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AB53D1C1F9E76004E3D46 /* Animation.swift */; };
 		E75A53111C17B16E001CB419 /* Brush.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A53101C17B16E001CB419 /* Brush.swift */; };
 		E7B33C881C1511B5008BC311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33C871C1511B5008BC311 /* AppDelegate.swift */; };
 		E7B33C8A1C1511B5008BC311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B33C891C1511B5008BC311 /* Assets.xcassets */; };
 		E7B33C8D1C1511B5008BC311 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B33C8B1C1511B5008BC311 /* MainMenu.xib */; };
 		E7B33C941C1511C2008BC311 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
-		E7B33C961C1511DD008BC311 /* SeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33C951C1511DD008BC311 /* SeedView.swift */; };
+		E7B33C961C1511DD008BC311 /* Seed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33C951C1511DD008BC311 /* Seed.swift */; };
 		E7B33C9E1C152227008BC311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33C9D1C152227008BC311 /* AppDelegate.swift */; };
 		E7B33CA01C152227008BC311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B33C9F1C152227008BC311 /* Assets.xcassets */; };
 		E7B33CA31C152227008BC311 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B33CA11C152227008BC311 /* MainMenu.xib */; };
 		E7B33CA81C152231008BC311 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
-		E7B33CAC1C15225A008BC311 /* StrokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33CAB1C15225A008BC311 /* StrokeView.swift */; };
+		E7B33CAC1C15225A008BC311 /* StrokeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33CAB1C15225A008BC311 /* StrokeAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,19 +147,21 @@
 		E703BB891C13D8A50098A5D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E703BB8B1C13D8A50098A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E703BB921C13D8D00098A5D9 /* Torus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Torus.swift; sourceTree = "<group>"; };
+		E70AB53C1C1F9DC2004E3D46 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E70AB53D1C1F9E76004E3D46 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		E75A53101C17B16E001CB419 /* Brush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brush.swift; sourceTree = "<group>"; };
 		E7B33C851C1511B5008BC311 /* Seed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B33C871C1511B5008BC311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7B33C891C1511B5008BC311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7B33C8C1C1511B5008BC311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E7B33C8E1C1511B5008BC311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7B33C951C1511DD008BC311 /* SeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeedView.swift; sourceTree = "<group>"; };
+		E7B33C951C1511DD008BC311 /* Seed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seed.swift; sourceTree = "<group>"; };
 		E7B33C9B1C152227008BC311 /* Stroke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stroke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B33C9D1C152227008BC311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7B33C9F1C152227008BC311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7B33CA21C152227008BC311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E7B33CA41C152227008BC311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7B33CAB1C15225A008BC311 /* StrokeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeView.swift; sourceTree = "<group>"; };
+		E7B33CAB1C15225A008BC311 /* StrokeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +248,7 @@
 		E703BAD01C0BD4D20098A5D9 = {
 			isa = PBXGroup;
 			children = (
+				E70AB53C1C1F9DC2004E3D46 /* README.md */,
 				E703BADB1C0BD4D20098A5D9 /* Scope */,
 				E703BAED1C0BD4D20098A5D9 /* ScopeTests */,
 				E703BAF81C0BD4D20098A5D9 /* ScopeUITests */,
@@ -327,6 +331,7 @@
 				E703BB371C0BEF3E0098A5D9 /* Drawing.swift */,
 				E703BB431C0E93AB0098A5D9 /* ScopeView.swift */,
 				E75A53101C17B16E001CB419 /* Brush.swift */,
+				E70AB53D1C1F9E76004E3D46 /* Animation.swift */,
 			);
 			path = ScopeUtilities;
 			sourceTree = "<group>";
@@ -371,7 +376,7 @@
 				E7B33C891C1511B5008BC311 /* Assets.xcassets */,
 				E7B33C8B1C1511B5008BC311 /* MainMenu.xib */,
 				E7B33C8E1C1511B5008BC311 /* Info.plist */,
-				E7B33C951C1511DD008BC311 /* SeedView.swift */,
+				E7B33C951C1511DD008BC311 /* Seed.swift */,
 			);
 			path = Seed;
 			sourceTree = "<group>";
@@ -383,7 +388,7 @@
 				E7B33C9F1C152227008BC311 /* Assets.xcassets */,
 				E7B33CA11C152227008BC311 /* MainMenu.xib */,
 				E7B33CA41C152227008BC311 /* Info.plist */,
-				E7B33CAB1C15225A008BC311 /* StrokeView.swift */,
+				E7B33CAB1C15225A008BC311 /* StrokeAnimation.swift */,
 			);
 			path = Stroke;
 			sourceTree = "<group>";
@@ -778,6 +783,7 @@
 			files = (
 				E75A53111C17B16E001CB419 /* Brush.swift in Sources */,
 				E703BB381C0BEF3E0098A5D9 /* Drawing.swift in Sources */,
+				E70AB53E1C1F9E76004E3D46 /* Animation.swift in Sources */,
 				E703BB441C0E93AB0098A5D9 /* ScopeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -813,7 +819,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7B33C881C1511B5008BC311 /* AppDelegate.swift in Sources */,
-				E7B33C961C1511DD008BC311 /* SeedView.swift in Sources */,
+				E7B33C961C1511DD008BC311 /* Seed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -821,7 +827,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7B33CAC1C15225A008BC311 /* StrokeView.swift in Sources */,
+				E7B33CAC1C15225A008BC311 /* StrokeAnimation.swift in Sources */,
 				E7B33C9E1C152227008BC311 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

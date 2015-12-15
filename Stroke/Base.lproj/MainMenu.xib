@@ -18,7 +18,7 @@
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <customObject id="pEQ-ag-9Ai" customClass="StrokeView" customModule="Stroke" customModuleProvider="target"/>
+        <customObject id="pEQ-ag-9Ai" customClass="StrokeAnimation" customModule="Stroke" customModuleProvider="target"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
                 <menuItem title="Stroke" id="1Xt-HY-uBw">
