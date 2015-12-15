@@ -652,7 +652,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Scope" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA" userLabel="Scope">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -671,11 +671,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Scope" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" misplaced="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HVp-9p-58m">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HVp-9p-58m">
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="270"/>
                                 <subviews>
                                     <scrollView autohidesScrollers="YES" horizontalLineScroll="26" horizontalPageScroll="10" verticalLineScroll="26" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yog-9H-Wta">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="270"/>
@@ -745,6 +745,10 @@
                                                             </prototypeCellViews>
                                                         </tableColumn>
                                                     </tableColumns>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="XfG-lQ-9wD" id="pgV-e5-oX9"/>
+                                                        <outlet property="delegate" destination="XfG-lQ-9wD" id="f2T-EN-LpR"/>
+                                                    </connections>
                                                 </outlineView>
                                             </subviews>
                                             <nil key="backgroundColor"/>
@@ -761,10 +765,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                     </scrollView>
-                                    <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XG7-sC-4eh">
-                                        <rect key="frame" x="208" y="0.0" width="272" height="270"/>
+                                    <customView horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="XG7-sC-4eh" customClass="ScopeView" customModule="ScopeUtilities">
+                                        <rect key="frame" x="200" y="0.0" width="150" height="270"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" placeholder="YES" id="sFC-sb-KNB"/>
+                                        </constraints>
                                     </customView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="XG7-sC-4eh" firstAttribute="top" secondItem="HVp-9p-58m" secondAttribute="top" id="SvR-zb-Nuk"/>
+                                    <constraint firstItem="XG7-sC-4eh" firstAttribute="leading" secondItem="Yog-9H-Wta" secondAttribute="trailing" id="aS5-zI-5hZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="XG7-sC-4eh" secondAttribute="trailing" id="e6J-Af-r9N"/>
+                                    <constraint firstAttribute="bottom" secondItem="XG7-sC-4eh" secondAttribute="bottom" id="yMI-RP-w3M"/>
+                                </constraints>
                                 <visibilityPriorities>
                                     <integer value="1000"/>
                                     <integer value="1000"/>
@@ -782,6 +795,9 @@
                             <constraint firstItem="HVp-9p-58m" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="qsF-wb-AXf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scopeView" destination="XG7-sC-4eh" id="l84-yU-EcG"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

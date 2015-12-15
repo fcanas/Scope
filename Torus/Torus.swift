@@ -9,7 +9,7 @@
 import Cocoa
 import ScopeUtilities
 
-class Torus: NSObject, GifCaptureTarget {
+class Torus: NSObject, Animation {
     
     let animationSize = CGSize(width: 450, height: 300)
     let name = "Torus"

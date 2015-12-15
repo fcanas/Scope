@@ -8,24 +8,7 @@
 
 import Cocoa
 
-@objc public protocol GifCaptureTarget {
-    var name :String { get }
-    var frameCount :Int { get }
-    var frameDuration :Float { get }
-    var animationSize :CGSize { get }
-    
-    func renderInContext(context: CGContext)
-    func increment()
-}
-
-public extension GifCaptureTarget {
-    public func clear(context: CGContext, color: NSColor) {
-        CGContextSetFillColorWithColor(context, color.CGColor)
-        CGContextFillRect(context, CGRect(origin: CGPoint.zero, size: animationSize))
-    }
-}
-
-func captureFrame(target: GifCaptureTarget) -> CGImage {
+func captureFrame(target: Animation) -> CGImage {
     let frameSize = target.animationSize
     let offscreenRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(frameSize.width), pixelsHigh: Int(frameSize.height), bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: NSDeviceRGBColorSpace, bitmapFormat: NSBitmapFormat.NSAlphaFirstBitmapFormat, bytesPerRow: 0, bitsPerPixel: 0)
     
@@ -36,24 +19,7 @@ func captureFrame(target: GifCaptureTarget) -> CGImage {
     return CGBitmapContextCreateImage(ctx!)!
 }
 
-func capture(target :GifCaptureTarget, url :NSURL) {
-    let frameCount = target.frameCount
-    
-    let fileProperties :[String : [String : Int]] = [kCGImagePropertyGIFDictionary as String : [kCGImagePropertyGIFLoopCount as String : frameCount]]
-    let frameProperties :[String : [String : Float]] = [kCGImagePropertyGIFDictionary as String : [kCGImagePropertyGIFDelayTime as String : target.frameDuration]]
-    
-    let destination = CGImageDestinationCreateWithURL(url, kUTTypeGIF, frameCount, nil)
-    CGImageDestinationSetProperties(destination!, fileProperties)
-    
-    for var frame = 0; frame < frameCount; frame++ {
-        CGImageDestinationAddImage(destination!, captureFrame(target), frameProperties)
-        target.increment()
-    }
-    
-    CGImageDestinationFinalize(destination!)
-}
-
-public func captureGifFromWindow(window: NSWindow, captureTarget: GifCaptureTarget) {
+public func captureGifFromWindow(window: NSWindow, captureTarget: Animation) {
     let panel = NSSavePanel()
     panel.nameFieldStringValue = "\(captureTarget.name).gif"
     panel.beginSheetModalForWindow(window, completionHandler: { (result) -> Void in
@@ -67,7 +33,7 @@ public func captureGifFromWindow(window: NSWindow, captureTarget: GifCaptureTarg
     
     var timer :NSTimer? = nil
     
-    @IBOutlet public var captureTarget :GifCaptureTarget! {
+    @IBOutlet public var captureTarget :Animation! {
         didSet {
             if let timer = self.timer {
                 timer.invalidate()

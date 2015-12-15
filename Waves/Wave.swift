@@ -9,7 +9,7 @@
 import Cocoa
 import ScopeUtilities
 
-class WaveView: NSView, GifCaptureTarget {
+class WaveView: NSView, Animation {
     
     let orbitColor = NSColor.lightGrayColor()
     let satelliteColor = NSColor.blackColor()

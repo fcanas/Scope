@@ -9,7 +9,7 @@
 import Cocoa
 import ScopeUtilities
 
-@objc class Seed: NSObject, GifCaptureTarget {
+@objc class Seed: NSObject, Animation {
     
     let name = "Seed"
     lazy var frameCount :Int = { return Int(1.0 / Float(self.counterIncrement)) }()
