@@ -23,29 +23,13 @@
 		E703BB361C0BEF290098A5D9 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
 		E703BB381C0BEF3E0098A5D9 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB371C0BEF3E0098A5D9 /* Drawing.swift */; };
 		E703BB441C0E93AB0098A5D9 /* ScopeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB431C0E93AB0098A5D9 /* ScopeView.swift */; };
-		E703BB5A1C1277370098A5D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB591C1277370098A5D9 /* AppDelegate.swift */; };
-		E703BB5C1C1277370098A5D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E703BB5B1C1277370098A5D9 /* Assets.xcassets */; };
-		E703BB5F1C1277370098A5D9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703BB5D1C1277370098A5D9 /* MainMenu.xib */; };
-		E703BB651C1277650098A5D9 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB641C1277650098A5D9 /* Star.swift */; };
-		E703BB661C1277720098A5D9 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
-		E703BB851C13D8A50098A5D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB841C13D8A50098A5D9 /* AppDelegate.swift */; };
-		E703BB871C13D8A50098A5D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E703BB861C13D8A50098A5D9 /* Assets.xcassets */; };
-		E703BB8A1C13D8A50098A5D9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703BB881C13D8A50098A5D9 /* MainMenu.xib */; };
-		E703BB911C13D8B70098A5D9 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
-		E703BB931C13D8D00098A5D9 /* Torus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB921C13D8D00098A5D9 /* Torus.swift */; };
 		E70AB5391C1E5056004E3D46 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
 		E70AB53E1C1F9E76004E3D46 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70AB53D1C1F9E76004E3D46 /* Animation.swift */; };
+		E70AB53F1C1FA15E004E3D46 /* StrokeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33CAB1C15225A008BC311 /* StrokeAnimation.swift */; };
+		E70AB5401C1FB85F004E3D46 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB641C1277650098A5D9 /* Star.swift */; };
+		E70AB5411C1FB86A004E3D46 /* Seed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33C951C1511DD008BC311 /* Seed.swift */; };
+		E70AB5421C1FB86E004E3D46 /* Torus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB921C13D8D00098A5D9 /* Torus.swift */; };
 		E75A53111C17B16E001CB419 /* Brush.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A53101C17B16E001CB419 /* Brush.swift */; };
-		E7B33C881C1511B5008BC311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33C871C1511B5008BC311 /* AppDelegate.swift */; };
-		E7B33C8A1C1511B5008BC311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B33C891C1511B5008BC311 /* Assets.xcassets */; };
-		E7B33C8D1C1511B5008BC311 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B33C8B1C1511B5008BC311 /* MainMenu.xib */; };
-		E7B33C941C1511C2008BC311 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
-		E7B33C961C1511DD008BC311 /* Seed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33C951C1511DD008BC311 /* Seed.swift */; };
-		E7B33C9E1C152227008BC311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33C9D1C152227008BC311 /* AppDelegate.swift */; };
-		E7B33CA01C152227008BC311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B33C9F1C152227008BC311 /* Assets.xcassets */; };
-		E7B33CA31C152227008BC311 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B33CA11C152227008BC311 /* MainMenu.xib */; };
-		E7B33CA81C152231008BC311 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
-		E7B33CAC1C15225A008BC311 /* StrokeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33CAB1C15225A008BC311 /* StrokeAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,35 +54,7 @@
 			remoteGlobalIDString = E703BB1E1C0BEF210098A5D9;
 			remoteInfo = ScopeUtilities;
 		};
-		E703BB671C12777A0098A5D9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E703BAD11C0BD4D20098A5D9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E703BB1E1C0BEF210098A5D9;
-			remoteInfo = ScopeUtilities;
-		};
-		E703BB8F1C13D8AE0098A5D9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E703BAD11C0BD4D20098A5D9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E703BB1E1C0BEF210098A5D9;
-			remoteInfo = ScopeUtilities;
-		};
 		E70AB53A1C1E505D004E3D46 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E703BAD11C0BD4D20098A5D9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E703BB1E1C0BEF210098A5D9;
-			remoteInfo = ScopeUtilities;
-		};
-		E7B33C921C1511BD008BC311 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E703BAD11C0BD4D20098A5D9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E703BB1E1C0BEF210098A5D9;
-			remoteInfo = ScopeUtilities;
-		};
-		E7B33CA91C152236008BC311 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E703BAD11C0BD4D20098A5D9 /* Project object */;
 			proxyType = 1;
@@ -135,32 +91,12 @@
 		E703BB371C0BEF3E0098A5D9 /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 		E703BB431C0E93AB0098A5D9 /* ScopeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScopeView.swift; sourceTree = "<group>"; };
 		E703BB521C1276820098A5D9 /* Waves copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Waves copy-Info.plist"; path = "/Users/fcanas/repositories/Scope/Waves copy-Info.plist"; sourceTree = "<absolute>"; };
-		E703BB571C1277370098A5D9 /* Star.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Star.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E703BB591C1277370098A5D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E703BB5B1C1277370098A5D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E703BB5E1C1277370098A5D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		E703BB601C1277370098A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E703BB641C1277650098A5D9 /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
-		E703BB821C13D8A50098A5D9 /* Torus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Torus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E703BB841C13D8A50098A5D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E703BB861C13D8A50098A5D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E703BB891C13D8A50098A5D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		E703BB8B1C13D8A50098A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E703BB921C13D8D00098A5D9 /* Torus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Torus.swift; sourceTree = "<group>"; };
 		E70AB53C1C1F9DC2004E3D46 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E70AB53D1C1F9E76004E3D46 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		E75A53101C17B16E001CB419 /* Brush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brush.swift; sourceTree = "<group>"; };
-		E7B33C851C1511B5008BC311 /* Seed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seed.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7B33C871C1511B5008BC311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7B33C891C1511B5008BC311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E7B33C8C1C1511B5008BC311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		E7B33C8E1C1511B5008BC311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7B33C951C1511DD008BC311 /* Seed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seed.swift; sourceTree = "<group>"; };
-		E7B33C9B1C152227008BC311 /* Stroke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stroke.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7B33C9D1C152227008BC311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7B33C9F1C152227008BC311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E7B33CA21C152227008BC311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		E7B33CA41C152227008BC311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7B33CAB1C15225A008BC311 /* StrokeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,38 +146,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E703BB541C1277370098A5D9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E703BB661C1277720098A5D9 /* ScopeUtilities.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E703BB7F1C13D8A50098A5D9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E703BB911C13D8B70098A5D9 /* ScopeUtilities.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7B33C821C1511B5008BC311 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7B33C941C1511C2008BC311 /* ScopeUtilities.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7B33C981C152227008BC311 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7B33CA81C152231008BC311 /* ScopeUtilities.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -273,10 +177,6 @@
 				E703BB0B1C0BD6DB0098A5D9 /* Waves.app */,
 				E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */,
 				E703BB281C0BEF210098A5D9 /* ScopeUtilitiesTests.xctest */,
-				E703BB571C1277370098A5D9 /* Star.app */,
-				E703BB821C13D8A50098A5D9 /* Torus.app */,
-				E7B33C851C1511B5008BC311 /* Seed.app */,
-				E7B33C9B1C152227008BC311 /* Stroke.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -348,10 +248,6 @@
 		E703BB581C1277370098A5D9 /* Star */ = {
 			isa = PBXGroup;
 			children = (
-				E703BB591C1277370098A5D9 /* AppDelegate.swift */,
-				E703BB5B1C1277370098A5D9 /* Assets.xcassets */,
-				E703BB5D1C1277370098A5D9 /* MainMenu.xib */,
-				E703BB601C1277370098A5D9 /* Info.plist */,
 				E703BB641C1277650098A5D9 /* Star.swift */,
 			);
 			path = Star;
@@ -360,10 +256,6 @@
 		E703BB831C13D8A50098A5D9 /* Torus */ = {
 			isa = PBXGroup;
 			children = (
-				E703BB841C13D8A50098A5D9 /* AppDelegate.swift */,
-				E703BB861C13D8A50098A5D9 /* Assets.xcassets */,
-				E703BB881C13D8A50098A5D9 /* MainMenu.xib */,
-				E703BB8B1C13D8A50098A5D9 /* Info.plist */,
 				E703BB921C13D8D00098A5D9 /* Torus.swift */,
 			);
 			path = Torus;
@@ -372,10 +264,6 @@
 		E7B33C861C1511B5008BC311 /* Seed */ = {
 			isa = PBXGroup;
 			children = (
-				E7B33C871C1511B5008BC311 /* AppDelegate.swift */,
-				E7B33C891C1511B5008BC311 /* Assets.xcassets */,
-				E7B33C8B1C1511B5008BC311 /* MainMenu.xib */,
-				E7B33C8E1C1511B5008BC311 /* Info.plist */,
 				E7B33C951C1511DD008BC311 /* Seed.swift */,
 			);
 			path = Seed;
@@ -384,10 +272,6 @@
 		E7B33C9C1C152227008BC311 /* Stroke */ = {
 			isa = PBXGroup;
 			children = (
-				E7B33C9D1C152227008BC311 /* AppDelegate.swift */,
-				E7B33C9F1C152227008BC311 /* Assets.xcassets */,
-				E7B33CA11C152227008BC311 /* MainMenu.xib */,
-				E7B33CA41C152227008BC311 /* Info.plist */,
 				E7B33CAB1C15225A008BC311 /* StrokeAnimation.swift */,
 			);
 			path = Stroke;
@@ -514,78 +398,6 @@
 			productReference = E703BB281C0BEF210098A5D9 /* ScopeUtilitiesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E703BB561C1277370098A5D9 /* Star */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E703BB611C1277370098A5D9 /* Build configuration list for PBXNativeTarget "Star" */;
-			buildPhases = (
-				E703BB531C1277370098A5D9 /* Sources */,
-				E703BB541C1277370098A5D9 /* Frameworks */,
-				E703BB551C1277370098A5D9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E703BB681C12777A0098A5D9 /* PBXTargetDependency */,
-			);
-			name = Star;
-			productName = Star;
-			productReference = E703BB571C1277370098A5D9 /* Star.app */;
-			productType = "com.apple.product-type.application";
-		};
-		E703BB811C13D8A50098A5D9 /* Torus */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E703BB8E1C13D8A50098A5D9 /* Build configuration list for PBXNativeTarget "Torus" */;
-			buildPhases = (
-				E703BB7E1C13D8A50098A5D9 /* Sources */,
-				E703BB7F1C13D8A50098A5D9 /* Frameworks */,
-				E703BB801C13D8A50098A5D9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E703BB901C13D8AE0098A5D9 /* PBXTargetDependency */,
-			);
-			name = Torus;
-			productName = Torus;
-			productReference = E703BB821C13D8A50098A5D9 /* Torus.app */;
-			productType = "com.apple.product-type.application";
-		};
-		E7B33C841C1511B5008BC311 /* Seed */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E7B33C911C1511B5008BC311 /* Build configuration list for PBXNativeTarget "Seed" */;
-			buildPhases = (
-				E7B33C811C1511B5008BC311 /* Sources */,
-				E7B33C821C1511B5008BC311 /* Frameworks */,
-				E7B33C831C1511B5008BC311 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E7B33C931C1511BD008BC311 /* PBXTargetDependency */,
-			);
-			name = Seed;
-			productName = Seed;
-			productReference = E7B33C851C1511B5008BC311 /* Seed.app */;
-			productType = "com.apple.product-type.application";
-		};
-		E7B33C9A1C152227008BC311 /* Stroke */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E7B33CA51C152227008BC311 /* Build configuration list for PBXNativeTarget "Stroke" */;
-			buildPhases = (
-				E7B33C971C152227008BC311 /* Sources */,
-				E7B33C981C152227008BC311 /* Frameworks */,
-				E7B33C991C152227008BC311 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E7B33CAA1C152236008BC311 /* PBXTargetDependency */,
-			);
-			name = Stroke;
-			productName = Stroke;
-			productReference = E7B33C9B1C152227008BC311 /* Stroke.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -616,18 +428,6 @@
 					E703BB271C0BEF210098A5D9 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
-					E703BB561C1277370098A5D9 = {
-						CreatedOnToolsVersion = 7.1.1;
-					};
-					E703BB811C13D8A50098A5D9 = {
-						CreatedOnToolsVersion = 7.1.1;
-					};
-					E7B33C841C1511B5008BC311 = {
-						CreatedOnToolsVersion = 7.1.1;
-					};
-					E7B33C9A1C152227008BC311 = {
-						CreatedOnToolsVersion = 7.1.1;
-					};
 				};
 			};
 			buildConfigurationList = E703BAD41C0BD4D20098A5D9 /* Build configuration list for PBXProject "Scope" */;
@@ -649,10 +449,6 @@
 				E703BB0A1C0BD6DB0098A5D9 /* Waves */,
 				E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */,
 				E703BB271C0BEF210098A5D9 /* ScopeUtilitiesTests */,
-				E703BB561C1277370098A5D9 /* Star */,
-				E703BB811C13D8A50098A5D9 /* Torus */,
-				E7B33C841C1511B5008BC311 /* Seed */,
-				E7B33C9A1C152227008BC311 /* Stroke */,
 			);
 		};
 /* End PBXProject section */
@@ -704,42 +500,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E703BB551C1277370098A5D9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E703BB5C1C1277370098A5D9 /* Assets.xcassets in Resources */,
-				E703BB5F1C1277370098A5D9 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E703BB801C13D8A50098A5D9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E703BB871C13D8A50098A5D9 /* Assets.xcassets in Resources */,
-				E703BB8A1C13D8A50098A5D9 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7B33C831C1511B5008BC311 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7B33C8A1C1511B5008BC311 /* Assets.xcassets in Resources */,
-				E7B33C8D1C1511B5008BC311 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7B33C991C152227008BC311 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7B33CA01C152227008BC311 /* Assets.xcassets in Resources */,
-				E7B33CA31C152227008BC311 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -747,8 +507,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70AB53F1C1FA15E004E3D46 /* StrokeAnimation.swift in Sources */,
 				E703BADF1C0BD4D20098A5D9 /* ViewController.swift in Sources */,
 				E703BADD1C0BD4D20098A5D9 /* AppDelegate.swift in Sources */,
+				E70AB5421C1FB86E004E3D46 /* Torus.swift in Sources */,
+				E70AB5411C1FB86A004E3D46 /* Seed.swift in Sources */,
+				E70AB5401C1FB85F004E3D46 /* Star.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,42 +560,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E703BB531C1277370098A5D9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E703BB5A1C1277370098A5D9 /* AppDelegate.swift in Sources */,
-				E703BB651C1277650098A5D9 /* Star.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E703BB7E1C13D8A50098A5D9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E703BB931C13D8D00098A5D9 /* Torus.swift in Sources */,
-				E703BB851C13D8A50098A5D9 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7B33C811C1511B5008BC311 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7B33C881C1511B5008BC311 /* AppDelegate.swift in Sources */,
-				E7B33C961C1511DD008BC311 /* Seed.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7B33C971C152227008BC311 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7B33CAC1C15225A008BC311 /* StrokeAnimation.swift in Sources */,
-				E7B33C9E1C152227008BC311 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -850,30 +578,10 @@
 			target = E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */;
 			targetProxy = E703BB2A1C0BEF210098A5D9 /* PBXContainerItemProxy */;
 		};
-		E703BB681C12777A0098A5D9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */;
-			targetProxy = E703BB671C12777A0098A5D9 /* PBXContainerItemProxy */;
-		};
-		E703BB901C13D8AE0098A5D9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */;
-			targetProxy = E703BB8F1C13D8AE0098A5D9 /* PBXContainerItemProxy */;
-		};
 		E70AB53B1C1E505D004E3D46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */;
 			targetProxy = E70AB53A1C1E505D004E3D46 /* PBXContainerItemProxy */;
-		};
-		E7B33C931C1511BD008BC311 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */;
-			targetProxy = E7B33C921C1511BD008BC311 /* PBXContainerItemProxy */;
-		};
-		E7B33CAA1C152236008BC311 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E703BB1E1C0BEF210098A5D9 /* ScopeUtilities */;
-			targetProxy = E7B33CA91C152236008BC311 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -890,38 +598,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				E703BB121C0BD6DB0098A5D9 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		E703BB5D1C1277370098A5D9 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E703BB5E1C1277370098A5D9 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		E703BB881C13D8A50098A5D9 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E703BB891C13D8A50098A5D9 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		E7B33C8B1C1511B5008BC311 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E7B33C8C1C1511B5008BC311 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		E7B33CA11C152227008BC311 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E7B33CA21C152227008BC311 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -1176,102 +852,6 @@
 			};
 			name = Release;
 		};
-		E703BB621C1277370098A5D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Star/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.Star;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E703BB631C1277370098A5D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Star/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.Star;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		E703BB8C1C13D8A50098A5D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Torus/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.Torus;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E703BB8D1C13D8A50098A5D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Torus/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.Torus;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		E7B33C8F1C1511B5008BC311 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Seed/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.Seed;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E7B33C901C1511B5008BC311 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Seed/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.Seed;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		E7B33CA61C152227008BC311 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Stroke/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.Stroke;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E7B33CA71C152227008BC311 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Stroke/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabiancanas.Stroke;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1334,42 +914,6 @@
 			buildConfigurations = (
 				E703BB341C0BEF210098A5D9 /* Debug */,
 				E703BB351C0BEF210098A5D9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E703BB611C1277370098A5D9 /* Build configuration list for PBXNativeTarget "Star" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E703BB621C1277370098A5D9 /* Debug */,
-				E703BB631C1277370098A5D9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E703BB8E1C13D8A50098A5D9 /* Build configuration list for PBXNativeTarget "Torus" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E703BB8C1C13D8A50098A5D9 /* Debug */,
-				E703BB8D1C13D8A50098A5D9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E7B33C911C1511B5008BC311 /* Build configuration list for PBXNativeTarget "Seed" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E7B33C8F1C1511B5008BC311 /* Debug */,
-				E7B33C901C1511B5008BC311 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E7B33CA51C152227008BC311 /* Build configuration list for PBXNativeTarget "Stroke" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E7B33CA61C152227008BC311 /* Debug */,
-				E7B33CA71C152227008BC311 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
