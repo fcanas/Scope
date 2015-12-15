@@ -16,7 +16,7 @@
 		E703BB0E1C0BD6DB0098A5D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB0D1C0BD6DB0098A5D9 /* AppDelegate.swift */; };
 		E703BB101C0BD6DB0098A5D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E703BB0F1C0BD6DB0098A5D9 /* Assets.xcassets */; };
 		E703BB131C0BD6DB0098A5D9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703BB111C0BD6DB0098A5D9 /* MainMenu.xib */; };
-		E703BB191C0BD75F0098A5D9 /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB181C0BD75F0098A5D9 /* WaveView.swift */; };
+		E703BB191C0BD75F0098A5D9 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB181C0BD75F0098A5D9 /* Wave.swift */; };
 		E703BB221C0BEF210098A5D9 /* ScopeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E703BB211C0BEF210098A5D9 /* ScopeUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E703BB291C0BEF210098A5D9 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
 		E703BB2E1C0BEF210098A5D9 /* ScopeUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB2D1C0BEF210098A5D9 /* ScopeUtilitiesTests.swift */; };
@@ -32,7 +32,7 @@
 		E703BB871C13D8A50098A5D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E703BB861C13D8A50098A5D9 /* Assets.xcassets */; };
 		E703BB8A1C13D8A50098A5D9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703BB881C13D8A50098A5D9 /* MainMenu.xib */; };
 		E703BB911C13D8B70098A5D9 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
-		E703BB931C13D8D00098A5D9 /* TorusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB921C13D8D00098A5D9 /* TorusView.swift */; };
+		E703BB931C13D8D00098A5D9 /* Torus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB921C13D8D00098A5D9 /* Torus.swift */; };
 		E70AB5391C1E5056004E3D46 /* ScopeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */; };
 		E75A53111C17B16E001CB419 /* Brush.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A53101C17B16E001CB419 /* Brush.swift */; };
 		E7B33C881C1511B5008BC311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33C871C1511B5008BC311 /* AppDelegate.swift */; };
@@ -124,7 +124,7 @@
 		E703BB0F1C0BD6DB0098A5D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E703BB121C0BD6DB0098A5D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E703BB141C0BD6DB0098A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E703BB181C0BD75F0098A5D9 /* WaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
+		E703BB181C0BD75F0098A5D9 /* Wave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 		E703BB1F1C0BEF210098A5D9 /* ScopeUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScopeUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E703BB211C0BEF210098A5D9 /* ScopeUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScopeUtilities.h; sourceTree = "<group>"; };
 		E703BB231C0BEF210098A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		E703BB861C13D8A50098A5D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E703BB891C13D8A50098A5D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E703BB8B1C13D8A50098A5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E703BB921C13D8D00098A5D9 /* TorusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorusView.swift; sourceTree = "<group>"; };
+		E703BB921C13D8D00098A5D9 /* Torus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Torus.swift; sourceTree = "<group>"; };
 		E75A53101C17B16E001CB419 /* Brush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brush.swift; sourceTree = "<group>"; };
 		E7B33C851C1511B5008BC311 /* Seed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B33C871C1511B5008BC311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -314,7 +314,7 @@
 				E703BB0F1C0BD6DB0098A5D9 /* Assets.xcassets */,
 				E703BB111C0BD6DB0098A5D9 /* MainMenu.xib */,
 				E703BB141C0BD6DB0098A5D9 /* Info.plist */,
-				E703BB181C0BD75F0098A5D9 /* WaveView.swift */,
+				E703BB181C0BD75F0098A5D9 /* Wave.swift */,
 			);
 			path = Waves;
 			sourceTree = "<group>";
@@ -359,7 +359,7 @@
 				E703BB861C13D8A50098A5D9 /* Assets.xcassets */,
 				E703BB881C13D8A50098A5D9 /* MainMenu.xib */,
 				E703BB8B1C13D8A50098A5D9 /* Info.plist */,
-				E703BB921C13D8D00098A5D9 /* TorusView.swift */,
+				E703BB921C13D8D00098A5D9 /* Torus.swift */,
 			);
 			path = Torus;
 			sourceTree = "<group>";
@@ -768,7 +768,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E703BB0E1C0BD6DB0098A5D9 /* AppDelegate.swift in Sources */,
-				E703BB191C0BD75F0098A5D9 /* WaveView.swift in Sources */,
+				E703BB191C0BD75F0098A5D9 /* Wave.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,7 +803,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E703BB931C13D8D00098A5D9 /* TorusView.swift in Sources */,
+				E703BB931C13D8D00098A5D9 /* Torus.swift in Sources */,
 				E703BB851C13D8A50098A5D9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

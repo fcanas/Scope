@@ -9,20 +9,16 @@
 import Cocoa
 import ScopeUtilities
 
-class Star: ScopeView {
+class Star: NSObject, GifCaptureTarget {
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        
-        animationSize = CGSize(width: 400, height: 400)
-        name = "Star"
-        frameCount = Int(Float(M_PI) * 2 / 0.03)
-        frameDuration = 0.03
-    }
+    let animationSize = CGSize(width: 400, height: 400)
+    let name = "Star"
+    let frameCount = Int(Float(M_PI) * 2 / 0.03)
+    let frameDuration :Float = 0.03
     
     var timeIndex :Float = 0
     
-    override func renderInContext(context: CGContext) {
+    func renderInContext(context: CGContext) {
         clear(context, color: NSColor.blackColor())
         CGContextSetFillColorWithColor(context, NSColor.whiteColor().CGColor)
         
@@ -49,7 +45,7 @@ class Star: ScopeView {
         return path
     }
     
-    override func increment() {
+    func increment() {
         timeIndex += 0.03
         if timeIndex >= Float(M_PI) * 2 {
             timeIndex -= Float(M_PI) * 2

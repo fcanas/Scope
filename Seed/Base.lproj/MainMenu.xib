@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9060"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -17,6 +17,7 @@
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
+        <customObject id="x2e-ev-FHj" customClass="Seed" customModule="Seed" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
@@ -676,9 +677,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <customView horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="qck-3H-KGa" customClass="SeedView" customModule="Seed" customModuleProvider="target">
+                    <customView horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="qck-3H-KGa" customClass="ScopeView" customModule="ScopeUtilities">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
-                        <animations/>
+                        <connections>
+                            <outlet property="captureTarget" destination="x2e-ev-FHj" id="psL-ya-OdI"/>
+                        </connections>
                     </customView>
                 </subviews>
                 <constraints>
@@ -687,7 +690,6 @@
                     <constraint firstAttribute="bottom" secondItem="qck-3H-KGa" secondAttribute="bottom" id="p4V-Hm-oIh"/>
                     <constraint firstAttribute="trailing" secondItem="qck-3H-KGa" secondAttribute="trailing" id="vqS-zD-GU4"/>
                 </constraints>
-                <animations/>
             </view>
         </window>
     </objects>

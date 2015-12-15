@@ -8,7 +8,7 @@
 
 import Cocoa
 
-public protocol GifCaptureTarget {
+@objc public protocol GifCaptureTarget {
     var name :String { get }
     var frameCount :Int { get }
     var frameDuration :Float { get }
@@ -16,6 +16,13 @@ public protocol GifCaptureTarget {
     
     func renderInContext(context: CGContext)
     func increment()
+}
+
+public extension GifCaptureTarget {
+    public func clear(context: CGContext, color: NSColor) {
+        CGContextSetFillColorWithColor(context, color.CGColor)
+        CGContextFillRect(context, CGRect(origin: CGPoint.zero, size: animationSize))
+    }
 }
 
 func captureFrame(target: GifCaptureTarget) -> CGImage {
@@ -56,44 +63,34 @@ public func captureGifFromWindow(window: NSWindow, captureTarget: GifCaptureTarg
     })
 }
 
-public class ScopeView : NSView, GifCaptureTarget {
-    public var name :String = "Scope"
-    public var frameCount :Int = 0
-    public var frameDuration :Float = 1 {
+@objc public class ScopeView : NSView {
+    
+    var timer :NSTimer? = nil
+    
+    @IBOutlet public var captureTarget :GifCaptureTarget! {
         didSet {
             if let timer = self.timer {
                 timer.invalidate()
             }
-            self.timer =  NSTimer(timeInterval: NSTimeInterval(frameDuration), target: self, selector: Selector("tick:"), userInfo: nil, repeats: true)
+            self.timer =  NSTimer(timeInterval: NSTimeInterval(captureTarget.frameDuration), target: self, selector: Selector("tick:"), userInfo: nil, repeats: true)
             NSRunLoop.mainRunLoop().addTimer(self.timer!, forMode: NSDefaultRunLoopMode)
         }
     }
-    public var animationSize :CGSize = CGSize(width: 512, height: 512)
-    
-    public func renderInContext(context: CGContext) {}
-    public func increment() {}
-    
-    public func clear(context: CGContext, color: NSColor) {
-        CGContextSetFillColorWithColor(context, color.CGColor)
-        CGContextFillRect(context, CGRect(origin: CGPoint.zero, size: animationSize))
-    }
     
     func tick(timer: NSTimer) {
-        increment()
+        captureTarget.increment()
         setNeedsDisplayInRect(bounds)
     }
     
-    override public var intrinsicContentSize: NSSize { get { return animationSize } }
+    override public var intrinsicContentSize: NSSize { get { return captureTarget.animationSize } }
     
     override public func drawRect(dirtyRect: NSRect) {
-        let ctx = NSGraphicsContext.currentContext()!.CGContext
-        renderInContext(ctx)
+        captureTarget.renderInContext(NSGraphicsContext.currentContext()!.CGContext)
     }
     
     @IBAction func captureGif(sender: AnyObject) {
-        captureGifFromWindow(self.window!, captureTarget: self)
+        captureGifFromWindow(self.window!, captureTarget: captureTarget)
     }
-    
-    var timer :NSTimer? = nil
+
 }
 
