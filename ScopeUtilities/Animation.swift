@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 @objc public protocol Animation {
     var name :String { get }
@@ -34,7 +35,7 @@ func capture(target :Animation, url :NSURL) {
     let destination = CGImageDestinationCreateWithURL(url, kUTTypeGIF, frameCount, nil)
     CGImageDestinationSetProperties(destination!, fileProperties)
     
-    for var frame = 0; frame < frameCount; frame++ {
+    for _ in 0 ..< frameCount {
         CGImageDestinationAddImage(destination!, captureFrame(target), frameProperties)
         target.increment()
     }

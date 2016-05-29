@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct Stroke {
     let points :Array<CGPoint>

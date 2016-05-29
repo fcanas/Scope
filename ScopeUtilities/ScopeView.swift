@@ -38,7 +38,7 @@ public func captureGifFromWindow(window: NSWindow, captureTarget: Animation) {
             if let timer = self.timer {
                 timer.invalidate()
             }
-            self.timer =  NSTimer(timeInterval: NSTimeInterval(captureTarget.frameDuration), target: self, selector: Selector("tick:"), userInfo: nil, repeats: true)
+            self.timer =  NSTimer(timeInterval: NSTimeInterval(captureTarget.frameDuration), target: self, selector: #selector(ScopeView.tick(_:)), userInfo: nil, repeats: true)
             NSRunLoop.mainRunLoop().addTimer(self.timer!, forMode: NSDefaultRunLoopMode)
         }
     }

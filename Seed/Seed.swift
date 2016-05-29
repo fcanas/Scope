@@ -23,8 +23,8 @@ import ScopeUtilities
         clear(context, color: NSColor.blackColor())
         CGContextTranslateCTM(context, animationSize.width / 2, animationSize.height / 2)
         
-        for var i :CGFloat = 0; i < 7; i++ {
-            drawSeed(context, scale: pow(3, i + counter))
+        for i in 0 ..< 7 {
+            drawSeed(context, scale: pow(3, CGFloat(i) + counter))
         }
     }
     
