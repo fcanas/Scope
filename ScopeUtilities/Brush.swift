@@ -20,7 +20,7 @@ public struct Stroke {
         self.points = points
     }
     
-    public func grow(point: CGPoint) -> Stroke {
+    public func grow(_ point: CGPoint) -> Stroke {
         var points = self.points
         points.append(point)
         return Stroke(points: points)
@@ -34,15 +34,16 @@ public struct Stroke {
         return Stroke(points: points)
     }
     
-    public func advance(stroke: Stroke, point: CGPoint) -> Stroke {
+    public func advance(_ stroke: Stroke, point: CGPoint) -> Stroke {
         return shrink().grow(point)
     }
 }
 
-public func dotBrush(context: CGContext, stroke: Stroke, color: CGColor, maxRadius: CGFloat) {
-    CGContextSetFillColorWithColor(context, color)
-    for (index, point) in stroke.points.enumerate() {
-        let radius = sin(CGFloat(index) / CGFloat(stroke.points.count) * CGFloat(M_PI)) * maxRadius
-        fillCircle(context: context, center: point, radius: radius)
+public func dotBrush(_ context: CGContext, stroke: Stroke, color: CGColor, maxRadius: CGFloat) {
+    context.setFillColor(color)
+    for (index, point) in stroke.points.enumerated() {
+        let radius = sin(CGFloat(index) / CGFloat(stroke.points.count) * CGFloat.pi) * maxRadius
+        
+        context.fillCircle(point, radius)
     }
 }

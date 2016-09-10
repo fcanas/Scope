@@ -13,37 +13,37 @@ class Torus: NSObject, Animation {
     
     let animationSize = CGSize(width: 450, height: 300)
     let name = "Torus"
-    let frameCount = Int(Float(M_PI) * 2 / 0.03)
+    let frameCount = Int(Float.pi * 2 / 0.03)
     let frameDuration :Float = 0.03
     
     var angle :CGFloat = 0.0
     var center = CGPoint(x: 0, y: 0)
     
-    func renderInContext(context: CGContext) {
-        clear(context, color: NSColor.blackColor())
+    func renderInContext(_ context: CGContext) {
+        clear(context, color: NSColor.black)
         
-        CGContextTranslateCTM(context, animationSize.width / 2, animationSize.height / 2)
+        context.translateBy(x: animationSize.width / 2, y: animationSize.height / 2)
         
-        CGContextSetStrokeColorWithColor(context, NSColor.whiteColor().CGColor)
+        context.setStrokeColor(NSColor.white.cgColor)
         
         let height :CGFloat = 100.0
         
-        for var localAngle :CGFloat = 0.0; localAngle < CGFloat(M_PI * 2); localAngle += CGFloat(M_PI / 25) {
+        for localAngle in stride(from: 0.0, to: (CGFloat.pi * 2), by: CGFloat.pi / 25) {
             center.x = sin(localAngle) * height * 1.5 * cos(angle * 1.5)
             center.y = (cos(localAngle) * height / 1.5 ) * sin(angle * 1.5)
 
-            CGContextStrokeEllipseInRect(context, rectAtCenter(center, size: CGSize(width: abs(sin(localAngle + CGFloat(M_PI)) * height), height: height)))
+            context.strokeEllipse(in: rectAtCenter(center, size: CGSize(width: abs(sin(localAngle + CGFloat.pi) * height), height: height)))
         }
     }
     
-    func rectAtCenter(center: CGPoint, size: CGSize) -> CGRect {
+    func rectAtCenter(_ center: CGPoint, size: CGSize) -> CGRect {
         return CGRect(origin: CGPoint(x: center.x - size.width / 2, y: center.y - size.height / 2), size: size)
     }
     
     func increment() {
         angle += 0.03
-        if angle >= CGFloat(M_PI * 2) {
-            angle -= CGFloat(M_PI * 2)
+        if angle >= (CGFloat.pi * 2) {
+            angle -= (CGFloat.pi * 2)
         }
     }
 }

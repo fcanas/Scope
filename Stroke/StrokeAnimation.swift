@@ -19,29 +19,29 @@ class StrokeAnimation: NSObject, Animation {
     let animationSize = CGSize(width: 400, height: 400)
     
     var stroke :Stroke = Stroke()
-    let maxCounter :CGFloat = 3 * CGFloat(M_PI)
+    let maxCounter :CGFloat = 3 * CGFloat.pi
     let counterIncrement :CGFloat = 0.18
     var counter :CGFloat = 0
     
-    func renderInContext(context: CGContext) {
-        clear(context, color: NSColor.blackColor())
+    func renderInContext(_ context: CGContext) {
+        clear(context, color: NSColor.black)
         
-        CGContextTranslateCTM(context, animationSize.width / 2, animationSize.height / 2)
-        CGContextRotateCTM(context, counter)
-        
-        blades(context)
-        
-        CGContextScaleCTM(context, counter / 2, counter / 2)
+        context.translateBy(x: animationSize.width / 2, y: animationSize.height / 2)
+        context.rotate(by: counter)
         
         blades(context)
         
-        CGContextScaleCTM(context, counter / 2, counter / 2)
+        context.scaleBy(x: counter / 2, y: counter / 2)
+        
+        blades(context)
+        
+        context.scaleBy(x: counter / 2, y: counter / 2)
         
         blades(context)
 
     }
     
-    func blades(context :CGContext) {
+    func blades(_ context :CGContext) {
         growShrinkStroke(context, x: 30 * cos(counter) * counter, y: 30 * sin(counter) * counter)
         growShrinkStroke(context, x: 30 * sin(counter) * counter, y: 30 * cos(counter) * counter)
         
@@ -49,7 +49,7 @@ class StrokeAnimation: NSObject, Animation {
         growShrinkStroke(context, x: -30 * sin(counter) * counter, y: -30 * cos(counter) * counter)
     }
     
-    func growShrinkStroke(context :CGContext, x: CGFloat, y: CGFloat) {
+    func growShrinkStroke(_ context :CGContext, x: CGFloat, y: CGFloat) {
         var margin :CGFloat = 15
         let point = CGPoint(
             x: x,
@@ -62,17 +62,17 @@ class StrokeAnimation: NSObject, Animation {
             stroke = Stroke()
         }
         
-        if counter < CGFloat(M_PI) {
-            margin = mRad * counter / CGFloat(M_PI)
+        if counter < CGFloat.pi {
+            margin = mRad * counter / CGFloat.pi
             stroke = stroke.grow(point)
-        } else if counter < CGFloat(2 * M_PI) {
+        } else if counter < CGFloat.pi * 2 {
             stroke = stroke.advance(stroke, point: point)
             margin = mRad
         } else {
             stroke = stroke.shrink()
-            margin = mRad * (1.0 - ((counter - CGFloat(M_PI) * 2) / CGFloat(M_PI)))
+            margin = mRad * (1.0 - ((counter - CGFloat.pi * 2) / CGFloat.pi))
         }
-        dotBrush(context, stroke: stroke, color: NSColor.whiteColor().CGColor, maxRadius: margin)
+        dotBrush(context, stroke: stroke, color: NSColor.white.cgColor, maxRadius: margin)
     }
     
     func increment() {

@@ -19,9 +19,9 @@ import ScopeUtilities
     var counterIncrement :CGFloat = 0.01
     var counter :CGFloat = 0
     
-    func renderInContext(context: CGContext) {
-        clear(context, color: NSColor.blackColor())
-        CGContextTranslateCTM(context, animationSize.width / 2, animationSize.height / 2)
+    func renderInContext(_ context: CGContext) {
+        clear(context, color: NSColor.black)
+        context.translateBy(x: animationSize.width / 2, y: animationSize.height / 2)
         
         for i in 0 ..< 7 {
             drawSeed(context, scale: pow(3, CGFloat(i) + counter))
@@ -36,25 +36,25 @@ import ScopeUtilities
     }
 }
 
-func drawSeed(context: CGContext, scale: CGFloat) {
+func drawSeed(_ context: CGContext, scale: CGFloat) {
     let s :CGFloat = scale / 3.0
-    CGContextScaleCTM(context, s, s)
-    CGContextSetStrokeColorWithColor(context, NSColor.whiteColor().CGColor)
-    CGContextAddPath(context, seedPath())
-    CGContextStrokePath(context)
-    CGContextScaleCTM(context, 1/s, 1/s)
+    context.scaleBy(x: s, y: s)
+    context.setStrokeColor(NSColor.white.cgColor)
+    context.addPath(seedPath())
+    context.strokePath()
+    context.scaleBy(x: 1/s, y: 1/s)
 }
 
 func seedPath() -> CGPath {
-    let path = CGPathCreateMutable()
+    let path = CGMutablePath()
     
-    var identity = CGAffineTransformMakeTranslation(0, 2.75)
+    let identity = CGAffineTransform(translationX: 0, y: 2.75)
     
-    CGPathMoveToPoint(path, &identity, 0, 0)
-    CGPathAddLineToPoint(path, &identity, -1, -2)
-    CGPathAddQuadCurveToPoint(path, &identity, -2, -4, 0, -4)
-    CGPathAddQuadCurveToPoint(path, &identity, 2, -4, 1, -2)
-    CGPathCloseSubpath(path)
+    path.move(to: .zero, transform: identity)
+    path.move(to: CGPoint(x:-1, y:-2), transform: identity)
+    path.addQuadCurve(to: CGPoint(x:0, y:-4), control: CGPoint(x:-2,y:-4), transform: identity)
+    path.addQuadCurve(to: CGPoint(x:1, y:-2), control: CGPoint(x:2,y:-4), transform: identity)
+    path.closeSubpath()
     
     return path
 }

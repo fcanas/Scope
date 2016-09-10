@@ -13,42 +13,41 @@ class Star: NSObject, Animation {
     
     let animationSize = CGSize(width: 400, height: 400)
     let name = "Star"
-    let frameCount = Int(Float(M_PI) * 2 / 0.03)
+    let frameCount = Int(Float.pi * 2 / 0.03)
     let frameDuration :Float = 0.03
     
     var timeIndex :Float = 0
     
-    func renderInContext(context: CGContext) {
-        clear(context, color: NSColor.blackColor())
-        CGContextSetFillColorWithColor(context, NSColor.whiteColor().CGColor)
+    func renderInContext(_ context: CGContext) {
+        clear(context, color: NSColor.black)
+        context.setFillColor(NSColor.white.cgColor)
         
-        CGContextTranslateCTM(context, animationSize.width / 2, animationSize.height / 2)
-        CGContextScaleCTM(context, CGFloat(cos(timeIndex) * 10.0), CGFloat(cos(timeIndex) * 10.0))
-        CGContextRotateCTM(context, CGFloat(timeIndex * 2))
+        context.translateBy(x: animationSize.width / 2, y: animationSize.height / 2)
+        context.scaleBy(x: CGFloat(cos(timeIndex) * 10.0), y: CGFloat(cos(timeIndex) * 10.0))
+        context.rotate(by: CGFloat(timeIndex * 2))
         
-        CGContextAddPath(context, star(10, outer: 20, pointCount: 10))
+        context.addPath(star(10, outer: 20, pointCount: 10))
         
-        CGContextFillPath(context)
+        context.fillPath()
     }
     
-    func star(inner: CGFloat, outer: CGFloat, pointCount :Int) -> CGPath {
-        let path = CGPathCreateMutable()
-        var identity = CGAffineTransformIdentity
+    func star(_ inner: CGFloat, outer: CGFloat, pointCount :Int) -> CGPath {
+        let path = CGMutablePath()
         var angle :CGFloat = 0
-        CGPathMoveToPoint(path, &identity, cos(angle) * inner, sin(angle) * inner)
-        while angle < CGFloat(M_PI) * 2 {
-            angle += CGFloat(M_PI * 2) / CGFloat(pointCount * 2)
-            CGPathAddLineToPoint(path, &identity, cos(angle) * outer, sin(angle) * outer)
-            angle += CGFloat(M_PI * 2) / CGFloat(pointCount * 2)
-            CGPathAddLineToPoint(path, &identity, cos(angle) * inner, sin(angle) * inner)
+        path.move(to: CGPoint(x: cos(angle) * inner, y: sin(angle) * inner))
+        while angle < CGFloat.pi * 2 {
+            angle += (CGFloat.pi * 2) / CGFloat(pointCount * 2)
+            path.addLine(to: CGPoint(x:cos(angle) * outer, y:sin(angle) * outer))
+            angle += (CGFloat.pi * 2) / CGFloat(pointCount * 2)
+            path.addLine(to: CGPoint(x:cos(angle) * inner, y:sin(angle) * inner))
         }
         return path
     }
     
     func increment() {
         timeIndex += 0.03
-        if timeIndex >= Float(M_PI) * 2 {
-            timeIndex -= Float(M_PI) * 2
+        if timeIndex >= Float.pi * 2 {
+            timeIndex -= Float.pi * 2
         }
     }
 }

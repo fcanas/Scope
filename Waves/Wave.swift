@@ -21,7 +21,7 @@ class WaveView: NSView, Animation {
     }
     
     let name = "Waves"
-    var frameCount :Int = Int(CGFloat(M_PI * 2) / 0.1)
+    var frameCount :Int = Int((CGFloat.pi * 2) / 0.1)
     var frameDuration :Float = 0.02
     let animationSize :CGSize = CGSize(width: 520, height: 520)
     
@@ -32,7 +32,7 @@ class WaveView: NSView, Animation {
     
     var p :CGFloat = 0.0
     let stepSize :CGFloat = 0.1
-    let modBase = CGFloat(M_PI * 2)
+    let modBase = (CGFloat.pi * 2)
     
     func tick(timer: NSTimer) {
         increment()
