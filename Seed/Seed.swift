@@ -51,7 +51,7 @@ func seedPath() -> CGPath {
     let identity = CGAffineTransform(translationX: 0, y: 2.75)
     
     path.move(to: .zero, transform: identity)
-    path.move(to: CGPoint(x:-1, y:-2), transform: identity)
+    path.addLine(to: CGPoint(x:-1, y:-2), transform: identity)
     path.addQuadCurve(to: CGPoint(x:0, y:-4), control: CGPoint(x:-2,y:-4), transform: identity)
     path.addQuadCurve(to: CGPoint(x:1, y:-2), control: CGPoint(x:2,y:-4), transform: identity)
     path.closeSubpath()
