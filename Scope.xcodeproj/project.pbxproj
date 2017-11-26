@@ -30,6 +30,7 @@
 		E70AB5411C1FB86A004E3D46 /* Seed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B33C951C1511DD008BC311 /* Seed.swift */; };
 		E70AB5421C1FB86E004E3D46 /* Torus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703BB921C13D8D00098A5D9 /* Torus.swift */; };
 		E75A53111C17B16E001CB419 /* Brush.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A53101C17B16E001CB419 /* Brush.swift */; };
+		E79C101A1FCB42E000812479 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79C10191FCB42E000812479 /* Spinner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		E70AB53C1C1F9DC2004E3D46 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E70AB53D1C1F9E76004E3D46 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		E75A53101C17B16E001CB419 /* Brush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brush.swift; sourceTree = "<group>"; };
+		E79C10191FCB42E000812479 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		E7B33C951C1511DD008BC311 /* Seed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seed.swift; sourceTree = "<group>"; };
 		E7B33CAB1C15225A008BC311 /* StrokeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,6 +165,7 @@
 				E703BB831C13D8A50098A5D9 /* Torus */,
 				E7B33C861C1511B5008BC311 /* Seed */,
 				E7B33C9C1C152227008BC311 /* Stroke */,
+				E79C10181FCB42CD00812479 /* Spinner */,
 				E703BADA1C0BD4D20098A5D9 /* Products */,
 				E703BB521C1276820098A5D9 /* Waves copy-Info.plist */,
 			);
@@ -259,6 +262,14 @@
 				E703BB921C13D8D00098A5D9 /* Torus.swift */,
 			);
 			path = Torus;
+			sourceTree = "<group>";
+		};
+		E79C10181FCB42CD00812479 /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				E79C10191FCB42E000812479 /* Spinner.swift */,
+			);
+			path = Spinner;
 			sourceTree = "<group>";
 		};
 		E7B33C861C1511B5008BC311 /* Seed */ = {
@@ -514,6 +525,7 @@
 				E70AB53F1C1FA15E004E3D46 /* StrokeAnimation.swift in Sources */,
 				E703BADF1C0BD4D20098A5D9 /* ViewController.swift in Sources */,
 				E703BADD1C0BD4D20098A5D9 /* AppDelegate.swift in Sources */,
+				E79C101A1FCB42E000812479 /* Spinner.swift in Sources */,
 				E70AB5421C1FB86E004E3D46 /* Torus.swift in Sources */,
 				E70AB5411C1FB86A004E3D46 /* Seed.swift in Sources */,
 				E70AB5401C1FB85F004E3D46 /* Star.swift in Sources */,

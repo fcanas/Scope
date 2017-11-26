@@ -11,7 +11,7 @@ import ScopeUtilities
 
 class ViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDelegate {
 
-    let animations :[Animation] = [Star(), Torus(), Seed(), StrokeAnimation()]
+    let animations :[Animation] = [Star(), Torus(), Seed(), StrokeAnimation(), Spinner()]
     
     @IBOutlet var scopeView :ScopeView!
     
