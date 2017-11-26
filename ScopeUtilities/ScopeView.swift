@@ -10,7 +10,7 @@ import Cocoa
 
 func captureFrame(_ target: Animation) -> CGImage {
     let frameSize = target.animationSize
-    let offscreenRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(frameSize.width), pixelsHigh: Int(frameSize.height), bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: NSDeviceRGBColorSpace, bitmapFormat: NSBitmapFormat.alphaFirst, bytesPerRow: 0, bitsPerPixel: 0)
+    let offscreenRep = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: Int(frameSize.width), pixelsHigh: Int(frameSize.height), bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: NSColorSpaceName.deviceRGB, bitmapFormat: NSBitmapImageRep.Format.alphaFirst, bytesPerRow: 0, bitsPerPixel: 0)
     
     let ctx = NSGraphicsContext(bitmapImageRep: offscreenRep!)?.cgContext
     
@@ -23,7 +23,7 @@ public func captureGifFromWindow(_ window: NSWindow, captureTarget: Animation) {
     let panel = NSSavePanel()
     panel.nameFieldStringValue = "\(captureTarget.name).gif"
     panel.beginSheetModal(for: window, completionHandler: { (result) -> Void in
-        if result == NSFileHandlingPanelOKButton {
+        if result.rawValue == NSFileHandlingPanelOKButton {
             capture(captureTarget, url: panel.url!)
         }
     })
@@ -43,7 +43,7 @@ public func captureGifFromWindow(_ window: NSWindow, captureTarget: Animation) {
         }
     }
     
-    func tick(_ timer: Timer) {
+    @objc func tick(_ timer: Timer) {
         captureTarget.increment()
         setNeedsDisplay(bounds)
     }
@@ -51,7 +51,7 @@ public func captureGifFromWindow(_ window: NSWindow, captureTarget: Animation) {
     override open var intrinsicContentSize: NSSize { get { return captureTarget.animationSize } }
     
     override open func draw(_ dirtyRect: NSRect) {
-        captureTarget.renderInContext(NSGraphicsContext.current()!.cgContext)
+        captureTarget.renderInContext(NSGraphicsContext.current!.cgContext)
     }
     
     @IBAction func captureGif(_ sender: AnyObject) {

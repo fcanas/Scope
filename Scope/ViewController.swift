@@ -40,7 +40,7 @@ class ViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDe
     }
     
     func outlineView(_ outlineView: NSOutlineView, viewFor tableColumn: NSTableColumn?, item: Any) -> NSView? {
-        let cell = outlineView.make(withIdentifier: "DataCell", owner: self) as! NSTableCellView
+        let cell = outlineView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "DataCell"), owner: self) as! NSTableCellView
         if let animation = item as? Animation { cell.textField?.stringValue = animation.name }
         return cell
     }
