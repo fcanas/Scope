@@ -19,6 +19,10 @@ import ScopeUtilities
     var counterIncrement :CGFloat = 0.01
     var counter :CGFloat = 0
     
+    func reset() {
+        counter = 0
+    }
+    
     func renderInContext(_ context: CGContext) {
         clear(context, color: NSColor.black)
         context.translateBy(x: animationSize.width / 2, y: animationSize.height / 2)

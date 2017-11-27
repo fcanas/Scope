@@ -27,6 +27,11 @@ class Spinner: NSObject, Animation {
     let counterIncrement :CGFloat = CGFloat.pi / 40
     var counter :CGFloat = 0
     
+    func reset() {
+        counter = 0
+        stroke = Stroke()
+    }
+    
     func renderInContext(_ context: CGContext) {
         clear(context, color: NSColor.black)
         

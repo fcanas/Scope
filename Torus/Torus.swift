@@ -19,6 +19,11 @@ class Torus: NSObject, Animation {
     var angle :CGFloat = 0.0
     var center = CGPoint(x: 0, y: 0)
     
+    func reset() {
+        angle = 0
+        center = .zero
+    }
+    
     func renderInContext(_ context: CGContext) {
         clear(context, color: NSColor.black)
         

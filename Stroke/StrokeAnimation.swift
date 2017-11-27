@@ -23,6 +23,11 @@ class StrokeAnimation: NSObject, Animation {
     let counterIncrement :CGFloat = 0.18
     var counter :CGFloat = 0
     
+    func reset() {
+        counter = 0
+        stroke = Stroke()
+    }
+    
     func renderInContext(_ context: CGContext) {
         clear(context, color: NSColor.black)
         

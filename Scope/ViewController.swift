@@ -60,5 +60,9 @@ class ViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDe
     @IBAction func saveDocument(_ sender: AnyObject?) {
         captureGifFromWindow(scopeView.window!, captureTarget: scopeView.captureTarget)
     }
+    
+    @IBAction func saveSequence(_ sender: AnyObject?) {
+        captureSequenceFromWindow(scopeView.window!, captureTarget: scopeView.captureTarget)
+    }
 }
 

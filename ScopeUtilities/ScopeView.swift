@@ -29,6 +29,16 @@ public func captureGifFromWindow(_ window: NSWindow, captureTarget: Animation) {
     })
 }
 
+public func captureSequenceFromWindow(_ window: NSWindow, captureTarget: Animation) {
+    let panel = NSSavePanel()
+    panel.nameFieldStringValue = "\(captureTarget.name).gif"
+    panel.beginSheetModal(for: window, completionHandler: { (result) -> Void in
+        if result.rawValue == NSFileHandlingPanelOKButton {
+            captureSequence(captureTarget, url: panel.url!)
+        }
+    })
+}
+
 @objc open class ScopeView : NSView {
     
     var timer :Timer? = nil

@@ -18,6 +18,10 @@ class Star: NSObject, Animation {
     
     var timeIndex :Float = 0
     
+    func reset() {
+        timeIndex = 0
+    }
+    
     func renderInContext(_ context: CGContext) {
         clear(context, color: NSColor.black)
         context.setFillColor(NSColor.white.cgColor)
